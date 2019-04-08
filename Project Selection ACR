@@ -1,0 +1,153 @@
+<ACR><HTML>
+
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="ACR.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="http://vjs.zencdn.net/4.12/video-js.css" rel="stylesheet">
+    <script src="http://vjs.zencdn.net/4.12/video.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+        function deviceLogs() { // server
+            var X = "http://localhost/Path/AssassinCreed/log/ACRLogs.php"
+            return true;
+        } window.onload = deviceLogs()
+    </script>
+
+
+    <script>
+        window.setInterval("reloadIFrame();", 30000);
+        function reloadIFrame() {
+            document.getElementById("ACRLog").src = "http://www.localpro.loc/Path/AssassinCreed/log/ACRLogs.json";
+        }
+    </script>
+
+    <div>
+
+        <iframe src="http://www.localpro.loc/Path/AssassinCreed/log/ACRLogs.json"
+                id="ACRLog"
+                name="DeviceLogs"
+                style="border: 2px solid gray;
+                background:#c6d1d1;
+                    height: 300px;
+                    width: 680px;
+                    position:absolute;
+                    margin-top:40%;
+                    margin-left: 40%"></iframe>
+    </div>
+</head>
+
+<body style="background-image:url(ACR_back.jpg);background-repeat:no-repeat;background-size:1292px 1025px;">
+    <!--define style-->
+    <div>
+        <iframe src="ACR.html"
+                style="border: 2px solid gray;
+                    height: 424px;
+                    width: 675px;
+                    position:absolute;
+                    margin-top:1%;
+                    margin-left: 40%"></iframe>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3" style="max-width:38%;">
+                <div class="card">
+                    <div class="card-header"><center><b>Assassin Creed Rebalian</b> </center></div>
+                    <div class="card-body">
+                        <img class="rounded mx-auto d-block" src="ACR.png" style="height:100px;width:100px;" /><br /><!--class="rounded float-right-->
+                        <center><a href="#" class="btn btn-primary" onclick="Install">Install</a> <br /></center>
+                        <center><a href="#" class="btn btn-primary" onclick="Localization">Localization</a> <br /></center>
+                        <center><a href="http://www.localpro.loc/Path/AssassinCreed/Execution/Tutorial/AcrTutorial.php" class="btn btn-primary"onclick="Tutorials">Tutorials</a><br /></center>
+                        <center><a href="#" class="btn btn-primary">Test1</a><br /></center>
+                        <center><a href="#" class="btn btn-primary">Test2</a><br /></center>
+                        <center><a href="#" class="btn btn-primary">Test3</a><br /></center>
+                    </div>
+                    <div class="responsive-video">
+                        <video id="MY_VIDEO_1" class="video-js vjs-default-skin" controls
+                               preload="auto" width="446" height="250" data-setup="{}">
+                            <source src="images/Trials_Install.mp4" type='video/mp4'>
+                            <source src="images/Trials_Install.mp4" type='video/webm'>
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+
+
+======================================================================================================================================
+
+<ACR><CSS>
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.bg {
+    background-image: url("images/trialsEnv.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.card-body {
+    background-color: #c0c0c0;
+    max-height: 390px;
+    width: 450px;
+    overflow: auto;
+}
+
+.card-header {
+    width: 450px;
+}
+
+.video-js vjs-default-skin {
+    margin-top: 120px;
+}
+
+.card-body2 {
+    position: absolute;
+    background-color: #0c0c0c;
+    object-fit: contain;
+}
+
+.card-body1 {
+    margin-top: 63%;
+    right: 30%;
+}
+
+.videobody {
+    position: absolute;
+    background-color: black;
+    margin-top: 30%;
+}
+
+br {
+    line-height: 2.5rem;
+}
+
+.responsive-video {
+    position: absolute;
+    margin-top: 295px;
+    top: 329px;
+    left: 2px;
+}
+
+.col-sm-3 {
+    padding-top: 1%;
+    margin-left: 7%;
+}
+.col-md-3 {
+    max-width:31%;
+}
