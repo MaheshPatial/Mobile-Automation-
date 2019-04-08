@@ -1,0 +1,161 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="Godmod.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto" />
+
+
+
+    <script type="text/javascript">
+        //DropDown
+        $(document).ready(function () {
+
+            $(".selLabel").click(function () {
+                $('.dropdown').toggleClass('active');;
+            });
+
+            $(".dropdown-list li").click(function () {
+                $('.selLabel').text($(this).text());
+                $('.dropdown').removeClass('active');
+                $('.selected-item p span').text($('.selLabel').text());
+            });
+
+        });
+    </script>
+
+    <script type="text/javascript">
+        function Error() {
+            var X = "http://localhost/Path/Logs/ErrorLogs.php/";
+            return true
+        } window.onload = Error()
+        function Normal() {
+            var Y = "http://localhost/Path/Logs/NormalLog.php/";
+            return true
+        } window.onload = Normal()
+
+
+    </script> 
+    <script type="text/javascript">
+        var mywindow;
+        function trialsPop() {
+            mywindow = window.open("http://www.localpro.loc/Path/Loadingpage/Trials/trialsLoding.html", '_blank', 'height=13000,width=13000', 'resizable=0');
+            setTimeout(function () { mywindow.close(); }, 70000);//add var un time
+        }
+        var mywindowACR;
+        function ACRPop() {
+            mywindowACR = window.open("http://www.localpro.loc/Path/Loadingpage/ACR/ACRLoding.html", '_blank', 'height=13000,width=13000', 'resizable=0', 'close=0');
+            setTimeout(function () { mywindow.close(); }, 70000);//add var un time 12:34:47
+        }
+
+        
+    </script> 
+</head>
+
+<script type="text/javascript">
+    function loader(elem) {
+
+        elem.setAttribute('href', 'http://localhost/Path/Trials/Godmod/TrialsStability.php/');
+    }
+</script>
+
+<body style="background-image:url(Godmod.png);">
+    <!--loader start-->
+    <!--DropdownStart-->
+    <div class="w3-card-4">
+        <div class="container" style="background-color:whitesmoke;width:575px;">
+            <div class="selected-item">
+            </div>
+            <div class="dropdown" style="width:400px;">
+                <span class="selLabel">Select Project</span>
+                <input type="hidden" name="cd-dropdown">
+                <ul class="dropdown-list">
+                    <li data-value="1">
+                        <a onclick="trialsPop()" href="http://www.localpro.loc/Path/Trials/Godmod/TrialsStability.php/" target="_top">
+                            <span>Trials Frontier</span>
+                        </a>
+                    </li>
+                    <li data-value="2">
+                        <a onclick="ACRPop()" href="http://www.localpro.loc/Path/AssassinCreed/Godmod/ACRstability.php/" target="_top">
+                            <span>Assassin Creed Rebalian</span>
+                        </a>
+                    </li>
+                    <li data-value="3">
+
+                        <span>Horse Haven</span>
+                        <a href="#">
+                        </a>
+                    </li>
+                    <li data-value="4">
+                        <span>Hungry Shark</span>
+                        <a href="#">
+                        </a>
+                    </li>
+                    <li data-value="5">
+                        <span>Hungry Shark</span>
+                        <a href="#">
+                        </a>
+                    </li>
+                    <li data-value="6">
+                        <span>Might & Magic</span>
+                        <a href="#">
+                        </a>
+                    </li>
+                    <li data-value="7">
+                        <span>Test1</span>
+                        <a href="#">
+                        </a>
+                    </li>
+                    <li data-value="8">
+                        <span>Test 2</span>
+                        <a href="#">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!--iframe device start-->
+    <div class="Deviceinfo">
+        <img src="DeviceInfo (2).jpg" style="margin-left:776px;margin-top:-97px;box-shadow:initial" />
+    </div>
+
+
+    <br />
+    <div class="container-fluid2">
+        <footer>
+            <div class="text" style="margin-top:62px;">
+                <div class="Errorlogs" style="color:#ff0000">
+                    <b>Error logs</b>
+                    <b style="margin-left:571px;color:#2200ff">Logs</b>
+                </div>
+            </div>
+            <!--<meta http-equiv="refresh" content="50"/>-->
+            <iframe class="bottomiframe"
+                    name="ErrorLogs"
+                    id="Error"
+                    src="http://www.localpro.loc/Path/Logs/Errorlog.json"
+                    width="600" height="320" align="bottom" style="background:#f1f3f3;margin-top:30px"></iframe>
+        </footer>
+    </div>
+
+    <div class="container-fluid3">
+        <footer>
+            <!--<meta http-equiv="refresh" content="30" />-->
+            <iframe class="thirdiframe"
+                    name="NormalLogs"
+                    id="Normal"
+                    src="http://www.localpro.loc/Path/Logs/Normallogs.json"
+                    width="600" height="320" align="bottom" style="background:#f1f3f3;margin-top:51px"></iframe>
+        </footer>
+    </div>
+</body>
+</html>
+
+
+<!--http://localhost/Path/Logs/Errorlog.json-->

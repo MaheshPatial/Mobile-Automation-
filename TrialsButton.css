@@ -1,0 +1,40 @@
+﻿.card-body {
+    background-color: #c0c0c0;
+    max-height: 300px;
+    width:500px;
+    overflow: auto;
+}
+.card-header {
+    width: 500px;
+}
+.video-js vjs-default-skin{
+    margin-top:120px;
+}
+.card-body2 {
+    position: absolute;
+    background-color: #0c0c0c;
+    object-fit: contain;
+}
+.card-body1{
+    margin-top:63%;
+    right:30%;
+}
+.videobody{
+    position:absolute;
+    background-color:black;
+    margin-top:30%;
+}
+br {
+    line-height: 2.5rem;
+}
+.responsive-video {
+    position: absolute;
+    top: 400px;
+    left: 13px;
+    
+}
+
+.col-sm-3 {
+    padding-top: 1%;
+    margin-left: 7%;
+}

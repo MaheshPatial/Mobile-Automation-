@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="TrialsButton.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="http://vjs.zencdn.net/4.12/video-js.css" rel="stylesheet">
+    <script src="http://vjs.zencdn.net/4.12/video.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script>
+        let getXMLFile = function (path, callback) {
+            let request = new XMLHttpRequest();
+            request.open("GET", path);
+            request.setRequestHeader("Content-Type", "text/xml");
+            request.onreadystatechange = function () {
+                if (request.readyState == 4 && this.status == 200) {
+                    callback(request.responseXML);
+                }
+            };
+            request.send();
+        };
+
+        getXMLFile("test.txt", function (xml) {
+            console.log(xml);
+        });
+
+    </script>
+    <div>
+        <iframe src="https://www.google.com"
+                name="DeviceLogs"
+                style="border: 1px solid gray;
+                    height: 250px;
+                    width: 886px;
+                    position:absolute;
+                    margin-top:28%;
+                    margin-left: 41%"></iframe>
+    </div>
+</head>
+<body>
+    <div>
+        <iframe src="test1.html"
+                style="border: 1px solid gray;
+                    height: 421px;
+                    width: 886px;
+                    position:absolute;
+                    margin-top:1%;
+                    margin-left: 41%"></iframe>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3"
+                <div class="card">
+                    <div class="card-header"><center> Featured </center></div>
+                    <div class="card-body">
+                        <img class="rounded mx-auto d-block" src="209818.jpg" /><br /><!--class="rounded float-right-->
+                        <h2> <center> Trials Frontier </center> </h2>
+                        <center><a href="http://localhost/Path/test/CMD.php" class="btn btn-primary" onclick="Install">Install</a> <br /></center>
+                        <center><a href="#" class="btn btn-primary" onclick="Localization">Localization</a> <br /></center>
+                        <center><a href="#" class="btn btn-primary">Tutorials</a><br /></center>
+                    </div>
+                    <div class="responsive-video">
+                        <video id="MY_VIDEO_1" class="video-js vjs-default-skin" controls
+                               preload="auto" width="550" height="310" data-setup="{}">
+                            <source src="images/Trials_Install.mp4" type='video/mp4'>
+                            <source src="images/Trials_Install.mp4" type='video/webm'>
+                        </video>
+                    </div>
+                    <!--<video controls src="https://addpipe.com/sample_vid/short.mp4" preload="none" height="270" width="500" control class="videobody"></video>-->
+                </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+    </html>

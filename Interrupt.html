@@ -1,0 +1,218 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="Interrupt.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="http://vjs.zencdn.net/4.12/video-js.css" rel="stylesheet">
+    <script src="http://vjs.zencdn.net/4.12/video.js"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r67/three.min.js"></script>
+    <title></title>
+
+
+</head>
+<body>
+    <script>
+    //back button
+        function goBack() {
+            window.history.back();
+    </script>
+    <!--effect Starts-->
+    <!-- threejs.org canvas lines example -->
+
+    <script type="text/javascript">
+        var mouseX = 0,
+            mouseY = 0,
+            windowHalfX = window.innerWidth / 2,
+            windowHalfY = window.innerHeight / 2,
+            SEPARATION = 300,
+            AMOUNTX = 10,
+            AMOUNTY = 10,
+            camera,
+            scene,
+            renderer;
+
+        init();
+        animate();
+
+        function init() {
+
+            var container,
+                separation = 100,
+                amountX = 40,
+                amountY = 40,
+                particle;
+
+            container = document.createElement('div');
+            container.classList.add('myCanvas');
+            document.body.appendChild(container);
+
+            scene = new THREE.Scene();
+
+            renderer = new THREE.CanvasRenderer({ alpha: true }); // gradient; this can be swapped for WebGLRenderer
+            renderer.setSize(window.innerWidth, window.innerHeight);
+            container.appendChild(renderer.domElement);
+
+            camera = new THREE.PerspectiveCamera(
+                75,
+                window.innerWidth / window.innerHeight,
+                1,
+                10000
+            );
+            camera.position.z = 100;
+
+            // particles
+            var PI2 = Math.PI * 2;
+            var material = new THREE.SpriteCanvasMaterial({
+                color: 0xffffff,
+                program: function (context) {
+                    context.beginPath();
+                    context.arc(0, 0, 0.5, 0, PI2, true);
+                    context.fill();
+                }
+            });
+
+            var geometry = new THREE.Geometry();
+
+            for (var i = 0; i < 100; i++) {
+                particle = new THREE.Sprite(material);
+                particle.position.x = Math.random() * 2 - 1;
+                particle.position.y = Math.random() * 2 - 1;
+                particle.position.z = Math.random() * 2 - 1;
+                particle.position.normalize();
+                particle.position.multiplyScalar(Math.random() * 10 + 450);
+                particle.scale.x = particle.scale.y = 10;
+                scene.add(particle);
+                geometry.vertices.push(particle.position);
+            }
+
+            // lines
+            var line = new THREE.Line(geometry, new THREE.LineBasicMaterial({ color: 0xffffff, opacity: 0.5 }));
+            scene.add(line);
+
+            // mousey
+            document.addEventListener('mousemove', onDocumentMouseMove, false);
+            document.addEventListener('touchstart', onDocumentTouchStart, false);
+            document.addEventListener('touchmove', onDocumentTouchMove, false);
+
+            window.addEventListener('resize', onWindowResize, false);
+
+        } // end init();
+
+        function onWindowResize() {
+
+            windowHalfX = window.innerWidth / 2;
+            windowHalfY = window.innerHeight / 2;
+
+            camera.aspect = window.innerWidth / window.innerHeight;
+            camera.updateProjectionMatrix();
+
+            renderer.setSize(window.innerWidth, window.innerHeight);
+
+        }
+
+        function onDocumentMouseMove(event) {
+
+            mouseX = event.clientX - windowHalfX;
+            mouseY = event.clientY - windowHalfY;
+
+        }
+
+        function onDocumentTouchStart(event) {
+
+            if (event.touches.length > 1) {
+
+                event.preventDefault();
+
+                mouseX = event.touches[0].pageX - windowHalfX;
+                mouseY = event.touches[0].pageY - windowHalfY;
+
+            }
+        }
+
+        function onDocumentTouchMove(event) {
+
+            if (event.touches.length == 1) {
+
+                event.preventDefault();
+
+                mouseX = event.touches[0].pageX - windowHalfX;
+                mouseY = event.touches[0].pageY - windowHalfY;
+
+            }
+        }
+
+        function animate() {
+
+            requestAnimationFrame(animate);
+            render();
+
+        }
+
+        function render() {
+
+            camera.position.x += (mouseX - camera.position.x) * .05;
+            camera.position.y += (- mouseY + 200 - camera.position.y) * .05;
+            camera.lookAt(scene.position);
+
+            renderer.render(scene, camera);
+
+        }
+    </script>
+    <!--effect ends-->
+
+
+    <div class="row">
+        <div class="col-md-5">
+            <div class="sub-main">
+                <input type="button" value="<<" onclick="history.back()" style="font-size:10px;margin: 10px; border-radius: 10px;" /></input>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div class="responsive-video">
+                <video id="MY_VIDEO_1" class="video-js vjs-default-skin" controls
+                       preload="auto" width="479" height="294" data-setup="{}">
+                    <source src="https://addpipe.com/sample_vid/short.mp4" type='video/mp4'>
+                    <source src="https://addpipe.com/sample_vid/short.mp4" type='video/webm'>
+                </video>
+            </div>
+        </div>
+        <div class="col-md-7">
+            <div class="Heading">
+                <h1><center><b>Interrupt</b></center></h1>
+            </div>
+            <div class="Phara">
+                <p>Please go through this document before start using the Interrupt Generator Application.</p>
+                <br>1. Add System Environment Variable path <u>"D:\Interrupt_Generator\Airtest"</u>
+                or <u>Run "Set_environment_variables.bat"</u>
+                <br>2. Don't Change the Application Directory. It must be in D:\Interrupt_Generator.
+                <br>3. Install the latest Google app from the Play store.
+                <br>4. Setup Google Assistant App by pressing Home button for 2 seconds.
+                <br>5. All logs are stored in log.txt.
+                <br>6. mobilenumber.txt and emailid.txt is important (Do not Delete) for reading mobileNumber,EmailId.
+                <br>7. Airtest Folder contains Airtest,python,all automated scripts(Do not Delete)
+                Voila!
+                <br>
+                <br>
+
+                <br>
+                <h1><br><center><b>How to use the application:</b></center></h1>
+                <br>1. Connect your Android Device to PC via USB and "Turn on" USB Debugging from Settings->Developers option->USB Debugging on your mobile device.
+                <br>2. Allow the permission on mobile if asked. This is for granting permission for usb debugging and paring  of mobile device with PC.
+                <br>3. Remove any kind of screen lock on the mobile device(Fingerprint,Pattern,Swipe). Set Lock Type to "NONE".
+                <br>
+                <br><h3><b>Note:</b></h3> All the commands works on the last mobile device conencted to the PC. For e.g. if you have connected a mobile (Device 1) first, all the commands
+                will run on this device and then if you connect another mobile (Device 2) to the same pc then all the commands will run on device 2 until you disconnect "Device 2"
+                from the pc. The app will automatically switch to the last device connected to the PC. Applicaiton sends commands on 1 devive at a time.
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
