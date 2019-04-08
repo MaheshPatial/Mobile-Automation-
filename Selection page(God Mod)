@@ -1,0 +1,497 @@
+<God mode HTML>
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="Godmod.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto" />
+
+
+
+    <script type="text/javascript">
+        //DropDown
+        $(document).ready(function () {
+
+            $(".selLabel").click(function () {
+                $('.dropdown').toggleClass('active');;
+            });
+
+            $(".dropdown-list li").click(function () {
+                $('.selLabel').text($(this).text());
+                $('.dropdown').removeClass('active');
+                $('.selected-item p span').text($('.selLabel').text());
+            });
+
+        });
+    </script>
+
+    <script type="text/javascript">
+        function Error() {
+            var X = "http://localhost/Path/Logs/ErrorLogs.php/";
+            return true
+        } window.onload = Error()
+        function Normal() {
+            var Y = "http://localhost/Path/Logs/NormalLog.php/";
+            return true
+        } window.onload = Normal()
+
+
+    </script> 
+    <script type="text/javascript">
+        var mywindow;
+        function trialsPop() {
+            mywindow = window.open("http://www.localpro.loc/Path/Loadingpage/Trials/trialsLoding.html", '_blank', 'height=13000,width=13000', 'resizable=0');
+            setTimeout(function () { mywindow.close(); }, 70000);//add var un time
+        }
+        var mywindowACR;
+        function ACRPop() {
+            mywindowACR = window.open("http://www.localpro.loc/Path/Loadingpage/ACR/ACRLoding.html", '_blank', 'height=13000,width=13000', 'resizable=0', 'close=0');
+            setTimeout(function () { mywindow.close(); }, 70000);//add var un time 12:34:47
+        }
+
+        
+    </script> 
+</head>
+
+<script type="text/javascript">
+    function loader(elem) {
+
+        elem.setAttribute('href', 'http://localhost/Path/Trials/Godmod/TrialsStability.php/');
+    }
+</script>
+
+<body style="background-image:url(Godmod.png);">
+    <!--loader start-->
+    <!--DropdownStart-->
+    <div class="w3-card-4">
+        <div class="container" style="background-color:whitesmoke;width:575px;">
+            <div class="selected-item">
+            </div>
+            <div class="dropdown" style="width:400px;">
+                <span class="selLabel">Select Project</span>
+                <input type="hidden" name="cd-dropdown">
+                <ul class="dropdown-list">
+                    <li data-value="1">
+                        <a onclick="trialsPop()" href="http://www.localpro.loc/Path/Trials/Godmod/TrialsStability.php/" target="_top">
+                            <span>Trials Frontier</span>
+                        </a>
+                    </li>
+                    <li data-value="2">
+                        <a onclick="ACRPop()" href="http://www.localpro.loc/Path/AssassinCreed/Godmod/ACRstability.php/" target="_top">
+                            <span>Assassin Creed Rebalian</span>
+                        </a>
+                    </li>
+                    <li data-value="3">
+
+                        <span>Horse Haven</span>
+                        <a href="#">
+                        </a>
+                    </li>
+                    <li data-value="4">
+                        <span>Hungry Shark</span>
+                        <a href="#">
+                        </a>
+                    </li>
+                    <li data-value="5">
+                        <span>Hungry Shark</span>
+                        <a href="#">
+                        </a>
+                    </li>
+                    <li data-value="6">
+                        <span>Might & Magic</span>
+                        <a href="#">
+                        </a>
+                    </li>
+                    <li data-value="7">
+                        <span>Test1</span>
+                        <a href="#">
+                        </a>
+                    </li>
+                    <li data-value="8">
+                        <span>Test 2</span>
+                        <a href="#">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!--iframe device start-->
+    <div class="Deviceinfo">
+        <img src="DeviceInfo (2).jpg" style="margin-left:776px;margin-top:-97px;box-shadow:initial" />
+    </div>
+
+
+    <br />
+    <div class="container-fluid2">
+        <footer>
+            <div class="text" style="margin-top:62px;">
+                <div class="Errorlogs" style="color:#ff0000">
+                    <b>Error logs</b>
+                    <b style="margin-left:571px;color:#2200ff">Logs</b>
+                </div>
+            </div>
+            <!--<meta http-equiv="refresh" content="50"/>-->
+            <iframe class="bottomiframe"
+                    name="ErrorLogs"
+                    id="Error"
+                    src="http://www.localpro.loc/Path/Logs/Errorlog.json"
+                    width="600" height="320" align="bottom" style="background:#f1f3f3;margin-top:30px"></iframe>
+        </footer>
+    </div>
+
+    <div class="container-fluid3">
+        <footer>
+            <!--<meta http-equiv="refresh" content="30" />-->
+            <iframe class="thirdiframe"
+                    name="NormalLogs"
+                    id="Normal"
+                    src="http://www.localpro.loc/Path/Logs/Normallogs.json"
+                    width="600" height="320" align="bottom" style="background:#f1f3f3;margin-top:51px"></iframe>
+        </footer>
+    </div>
+</body>
+</html>
+
+
+<!--http://localhost/Path/Logs/Errorlog.json-->
+======================================================================================================================================
+<PHP File>
+<?php
+exec ('C:\xampp\htdocs\Path\Trials\Godmod\Stability.bat'); // Trials
+?> 
+
+<?php
+exec ('C:\xampp\htdocs\Path\AssassinCreed\Godmod\ACRstability.bat'); // ACR
+?> 
+
+
+
+
+<1.ACR God mode>
+
+
+bat file _ 
+{*Start form here*
+  
+    adb logcat -v time -d > ACRStability.json
+adb shell monkey -p com.ubisoft.accovenant -v 300
+Timeout 50
+adb shell monkey -p com.ubisoft.accovenant -v 200
+Timeout 40
+adb shell monkey -p com.ubisoft.accovenant -v 100
+Timeout 30
+adb shell monkey -p com.ubisoft.accovenant -v 200
+Timeout 25
+adb shell monkey -p com.ubisoft.accovenant --pct-rotation 5  --pct-appswitch 19 --hprof --monitor-native-crashes -v 5000
+pause
+
+
+}*Ends Here*
+
+
+Trials 
+{*Start Here*
+adb logcat -v time -d > godlogs.txt
+adb shell monkey -p com.ubisoft.redlynx.trialsfrontier.ggp --pct-rotation 5  --pct-appswitch 19 --hprof --monitor-native-crashes -v 200000
+ 
+}Ends here
+=======================================================================================================================================
+
+<God mode CSS>
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(background.png);
+}
+.bgImag {
+    background-image: url(background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.w3-card-4 {
+    width: 30%;
+    height: 60%;
+    margin-top: 25px;
+    margin-left: 120px;
+}
+
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v19/KFOmCnqEu92Fr1Mu4mxP.ttf) format('truetype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+    *,
+    *:after,
+    *:before {
+        box-sizing: border-box;
+    }
+
+html {
+    line-height: 1.2;
+}
+
+body {
+    background-color: #f5f5f5;
+    color: #333;
+    font-family: "Roboto", arial, sans-serif;
+    font-size: 16px;
+}
+
+.selected-item {
+    margin: 20px 0;
+    text-align: center;
+    margin-right: 900px
+}
+
+    .selected-item p {
+        font-size: 18px;
+    }
+
+        .selected-item p span {
+            font-weight: bold;
+        }
+/* dropdown list */
+.dropdown {
+    margin: 20px auto;
+    width: 406px;
+    margin-left: 12px;
+    position: relative;
+    -webkit-perspective: 800px;
+    perspective: 800px;
+}
+
+    .dropdown.active .selLabel:after {
+        content: '\25B2';
+        margin-right:900px;
+    }
+
+    .dropdown.active .dropdown-list li:nth-child(1) {
+        -webkit-transform: translateY(100%);
+        transform: translateY(100%);
+    }
+
+    .dropdown.active .dropdown-list li:nth-child(2) {
+        -webkit-transform: translateY(200%);
+        transform: translateY(200%);
+    }
+
+    .dropdown.active .dropdown-list li:nth-child(3) {
+        -webkit-transform: translateY(300%);
+        transform: translateY(300%);
+    }
+
+    .dropdown.active .dropdown-list li:nth-child(4) {
+        -webkit-transform: translateY(400%);
+        transform: translateY(400%);
+    }
+
+    .dropdown.active .dropdown-list li:nth-child(5) {
+        -webkit-transform: translateY(500%);
+        transform: translateY(500%);
+    }
+
+    .dropdown.active .dropdown-list li:nth-child(6) {
+        -webkit-transform: translateY(600%);
+        transform: translateY(600%);
+    }
+
+    .dropdown.active .dropdown-list li:nth-child(7) {
+        -webkit-transform: translateY(700%);
+        transform: translateY(700%);
+    }
+
+    .dropdown.active .dropdown-list li:nth-child(8) {
+        -webkit-transform: translateY(800%);
+        transform: translateY(800%);
+    }
+
+    .dropdown > span {
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        height: 60px;
+        line-height: 60px;
+        color: #fff;
+        font-size: 18px;
+        letter-spacing: 2px;
+        background: #34495e;
+        display: block;
+        padding: 0 50px 0 30px;
+        position: relative;
+        z-index: 99999;
+        cursor: pointer;
+        -webkit-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+        -webkit-transform-origin: 50% 0%;
+        transform-origin: 50% 0%;
+        transition: -webkit-transform 300ms;
+        transition: transform 300ms;
+        transition: transform 300ms, -webkit-transform 300ms;
+        -webkit-backface-visibility: hidden;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+
+        .dropdown > span:after {
+            content: '\25BC';
+            position: absolute;
+            right: 0px;
+            top: 15%;
+            width: 50px;
+            text-align: center;
+            font-size: 12px;
+            padding: 10px;
+            height: 70%;
+            line-height: 24px;
+            border-left: 1px solid #ddd;
+        }
+
+        .dropdown > span:active {
+            -webkit-transform: rotateX(45deg);
+            transform: rotateX(45deg);
+        }
+
+            .dropdown > span:active:after {
+                content: '\25B2';
+            }
+
+.dropdown-list {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+}
+
+    .dropdown-list li {
+        display: block;
+        list-style: none;
+        left: 0;
+        opacity: 1;
+        transition: -webkit-transform 300ms ease;
+        transition: transform 300ms ease;
+        transition: transform 300ms ease, -webkit-transform 300ms ease;
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
+
+        .dropdown-list li:nth-child(1) {
+            background-color: #1abc9c;
+            z-index: 4;
+            -webkit-transform: translateY(0);
+            transform: translateY(0);
+        }
+
+        .dropdown-list li:nth-child(2) {
+            background-color: #3498db;
+            z-index: 3;
+            -webkit-transform: translateY(3%);
+            transform: translateY(3%);
+        }
+
+        .dropdown-list li:nth-child(3) {
+            background-color: #9b59b6;
+            z-index: 2;
+            -webkit-transform: translateY(6%);
+            transform: translateY(6%);
+        }
+
+        .dropdown-list li:nth-child(4) {
+            background-color: #e67e22;
+            z-index: 1;
+            -webkit-transform: translateY(9%);
+            transform: translateY(9%);
+        }
+
+        .dropdown-list li:nth-child(5) {
+            background-color: #1abc9c;
+            z-index: 1;
+            -webkit-transform: translateY(9%);
+            transform: translateY(9%);
+        }
+
+        .dropdown-list li:nth-child(6) {
+            background-color: #3498db;
+            z-index: 1;
+            -webkit-transform: translateY(9%);
+            transform: translateY(9%);
+        }
+
+        .dropdown-list li:nth-child(7) {
+            background-color: #9b59b6;
+            z-index: 1;
+            -webkit-transform: translateY(9%);
+            transform: translateY(9%);
+        }
+
+        .dropdown-list li:nth-child(8) {
+            background-color: #e67e22;
+            z-index: 1;
+            -webkit-transform: translateY(9%);
+            transform: translateY(9%);
+        }
+
+        .dropdown-list li span {
+            box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+            -webkit-backface-visibility: hidden;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            width: 100%;
+            font-size: 18px;
+            line-height: 60px;
+            padding: 0 30px;
+            display: block;
+            color: #fff;
+            cursor: pointer;
+            letter-spacing: 2px;
+        }
+
+}
+.Deviceinfo {
+    margin-top: -1490px;
+}
+.container-fluid2 {
+    margin-top: -55px;
+    margin-left: 10px;
+}
+.Refresh{
+    margin-top:10px;
+}
+
+.container-fluid3 {
+    margin-top: -377px;
+    margin-left: 667px;
+}
+.card {
+    
+    
+    
+}
+
+
