@@ -1,0 +1,2337 @@
+This page consisit of login page HTML & Login CSS
+
+<Login Page>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Page</title>
+    <link rel="stylesheet" href="Loginpage.css" />
+
+    <script type="text/javascript">
+        function check(form) { /*function to check userid & password*/
+            /*the following code checkes whether the entered userid and password are matching*/
+            if (form.userName.value == "admin" && form.password.value == "admin") {
+                window.close('LoginPage.html');
+                window.open('SelectionPage.html');/*opens the target page while Id & password matches*/
+            }
+            else {
+                alert("Error Password or Username")/*displays error message*/
+            }
+        }
+    </script>
+
+</head>
+<body>
+    <form>
+        <div class="login">
+            <div class="form">
+                <h1>Login</h1>
+                <p>Username</p>
+                <input type="text" placeholder="Enter your Name" name="userName">
+                <p>Password</></p>
+                <input type="password" placeholder="Enter your Password" name="password">
+                <button onclick="check(form)">Login</button>
+
+            </div>
+        </div>
+
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 911.58 768.16">
+
+            <g style="isolation: isolate">
+                <g id="fenetreWinter">
+                    <path d="M730.11,583.42v-472a2,2,0,0,0-2-2H185.69a2,2,0,0,0-2,2v472Z" transform="translate(0.03 0.16)" style="fill: #E3E7EE" />
+                    <g>
+                        <path d="M731.11,625.42v-472a2,2,0,0,0-2-2H186.69a2,2,0,0,0-2,2v472Z" transform="translate(0.03 0.16)" style="fill: #e3e7ee" />
+                        <g style="opacity: 0.7">
+                            <path d="M718.68,363c-16.45,0-29.79,15.19-29.79,33.93,0,1.17.05,2.33.15,3.47-.54,0-1.09-.05-1.64-.05a36.91,36.91,0,0,0-36.61,32.29c-14.36,1.11-25.81,21.14-25.81,45.7,0,1.17,0,2.32.08,3.47A34,34,0,0,0,608.84,503a36.88,36.88,0,0,0-24.94-14.5c-1.11-14.37-21.14-25.82-45.7-25.82-1.17,0-2.32,0-3.47.09a33.9,33.9,0,0,0-55.14-5.61,22.41,22.41,0,0,0-8.62-1.73,22.1,22.1,0,0,0-6.75,1.05,22,22,0,0,0-6.74-1.05,22.41,22.41,0,0,0-8.62,1.73,33.9,33.9,0,0,0-55.14,5.61c-1.15-.06-2.3-.09-3.48-.09-24.55,0-44.58,11.45-45.69,25.82a36.89,36.89,0,0,0-32.29,36.6c0,.55,0,1.1,0,1.64-1.14-.1-2.29-.15-3.46-.15s-2.06,0-3.08.13a33.9,33.9,0,0,0-13.29-45.5q.09-1.72.09-3.48c0-24.55-11.45-44.59-25.82-45.7a36.89,36.89,0,0,0-36.6-32.28c-.55,0-1.1,0-1.64,0,.1-1.14.15-2.3.15-3.47,0-18.74-13.34-33.93-29.79-33.93a27,27,0,0,0-15,4.61v58.62c.84.55,1.7,1.08,2.58,1.55V568h67.78a35.54,35.54,0,0,0,14.56,3.05,36.42,36.42,0,0,0,9.74-1.32c5.58,9.74,17.06,16.42,30.32,16.42,13.69,0,25.48-7.13,30.84-17.39H588.77c5.36,10.26,17.15,17.39,30.84,17.39,12.37,0,23.18-5.81,29.11-14.48h0a35.74,35.74,0,0,0,14.56-3.05h67.77V427.78c.16-.08.3-.17.45-.26v-61.2A26.74,26.74,0,0,0,718.68,363Z" transform="translate(0.03 0.16)" style="fill: #d7dadd" />
+                            <path d="M186.44,625.42H731.09V523.27c.16-.08.3-.17.45-.26v-61.2a26.74,26.74,0,0,0-12.86-3.31c-16.45,0-29.79,15.19-29.79,33.93,0,1.17.05,2.33.15,3.47-.54,0-1.09,0-1.64,0a36.91,36.91,0,0,0-36.61,32.29c-14.36,1.11-25.81,21.14-25.81,45.7,0,1.17,0,2.32.08,3.47a34,34,0,0,0-16.22,21.17A36.88,36.88,0,0,0,583.9,584c-1.11-14.37-21.14-25.82-45.7-25.82-1.17,0-2.32,0-3.47.09a33.89,33.89,0,0,0-55.14-5.6,22.22,22.22,0,0,0-15.37-.69,22,22,0,0,0-6.74-1.05,22.23,22.23,0,0,0-8.62,1.74,33.89,33.89,0,0,0-55.14,5.6c-1.15-.06-2.3-.09-3.48-.09-24.55,0-44.58,11.45-45.69,25.82a36.89,36.89,0,0,0-32.29,36.6c0,.55,0,1.1,0,1.64-1.14-.1-2.29-.15-3.46-.15s-2.06,0-3.08.13a33.9,33.9,0,0,0-13.29-45.5q.09-1.73.09-3.48c0-24.55-11.45-44.59-25.82-45.7a36.89,36.89,0,0,0-36.6-32.28c-.55,0-1.1,0-1.64,0,.1-1.14.15-2.3.15-3.47,0-18.74-13.34-33.93-29.79-33.93a27,27,0,0,0-15,4.61v58.62c.84.55,1.7,1.08,2.58,1.55Z" transform="translate(0.03 0.16)" style="fill: #bdbfc1" />
+                        </g>
+                        <g>
+                            <path d="M334.14,223.63a14.34,14.34,0,0,0-19.57-17.19A17.9,17.9,0,0,0,279,208.31a13.25,13.25,0,0,0-4.68-.84,13.42,13.42,0,0,0-13.19,10.9h-.24a10.46,10.46,0,1,0,0,20.92h68.81a8.44,8.44,0,0,0,4.41-15.65Z" transform="translate(0.03 0.16)" style="fill: #fcfcfc" />
+                            <path d="M293.8,196.42a17.93,17.93,0,0,0-12.15,16,13.21,13.21,0,0,0-4.68-.84,13.44,13.44,0,0,0-13.19,10.9h-.24" transform="translate(0.03 0.16)" style="fill: none;stroke: #fff;stroke-linecap: round;stroke-miterlimit: 10;stroke-width: 3.1258883476257324px" />
+                            <path d="M310.26,209.4a13.54,13.54,0,0,1,3.67-3.09,13.76,13.76,0,0,1,4.61-1.61,11.36,11.36,0,0,1,2.47-.16,16,16,0,0,1,2.48.23,15,15,0,0,1,4.64,1.78,14.46,14.46,0,0,1,3.77,3.24,14.66,14.66,0,0,1,2.42,4.31,13.28,13.28,0,0,1,.78,4.82,12.92,12.92,0,0,1-1,4.7,14.68,14.68,0,0,0,.17-4.67,14.09,14.09,0,0,0-1.15-4.4,14.48,14.48,0,0,0-10-8.31,15,15,0,0,0-12.92,3.16Z" transform="translate(0.03 0.16)" style="fill: #E3E7EE" />
+                            <path d="M330.73,222.43a7.63,7.63,0,0,1,5.48,2.07,8.54,8.54,0,0,1,2.72,5.46,9.23,9.23,0,0,1-.27,3.1,8.42,8.42,0,0,1-1.38,2.78,7.68,7.68,0,0,1-5,3,9.77,9.77,0,0,0,4-3.74,8.37,8.37,0,0,0,1.1-5,8.51,8.51,0,0,0-2-4.75A9.63,9.63,0,0,0,330.73,222.43Z" transform="translate(0.03 0.16)" style="fill: #E3E7EE" />
+                        </g>
+                        <g>
+                            <path d="M640,225.36a17,17,0,0,0-16.32-21.87A17,17,0,0,0,616.8,205a21.25,21.25,0,0,0-42.19,2.22,15.76,15.76,0,0,0-5.56-1,15.94,15.94,0,0,0-15.65,12.94h-.29a12.42,12.42,0,0,0,0,24.83h81.67A10,10,0,0,0,640,225.36Z" transform="translate(0.03 0.16)" style="fill: #fcfcfc" />
+                            <path d="M592.15,193.07A21.28,21.28,0,0,0,577.72,212a15.74,15.74,0,0,0-5.55-1,15.93,15.93,0,0,0-15.65,12.94h-.29" transform="translate(0.03 0.16)" style="fill: none;stroke: #fff;stroke-linecap: round;stroke-miterlimit: 10;stroke-width: 3.7101586763192813px" />
+                            <path d="M611.68,208.48a15.86,15.86,0,0,1,9.83-5.58,13.71,13.71,0,0,1,2.93-.19,19.48,19.48,0,0,1,2.94.27,17.92,17.92,0,0,1,5.51,2.11,17.31,17.31,0,0,1,4.47,3.84,17.52,17.52,0,0,1,2.88,5.12,15.83,15.83,0,0,1,.92,5.73,14.66,14.66,0,0,1-1.13,5.57,17.81,17.81,0,0,0,.2-5.54,16.63,16.63,0,0,0-1.36-5.22,17,17,0,0,0-7-7.88,16.62,16.62,0,0,0-4.9-2,18.67,18.67,0,0,0-5.33-.37A18.45,18.45,0,0,0,611.68,208.48Z" transform="translate(0.03 0.16)" style="fill: #e3e7ee" />
+                            <path d="M636,223.94a9.06,9.06,0,0,1,6.51,2.46,10.15,10.15,0,0,1,3.23,6.48,10.84,10.84,0,0,1-.33,3.68,9.84,9.84,0,0,1-1.63,3.29,9.1,9.1,0,0,1-5.94,3.63,11.59,11.59,0,0,0,4.72-4.44,10.07,10.07,0,0,0-1.09-11.62A11.46,11.46,0,0,0,636,223.94Z" transform="translate(0.03 0.16)" style="fill: #e3e7ee" />
+                        </g>
+                        <g>
+                            <path d="M519.89,309.91A19.68,19.68,0,0,0,501,284.64a19.56,19.56,0,0,0-8,1.7,24.56,24.56,0,0,0-48.76,2.56,18.43,18.43,0,0,0-24.51,13.8h-.33a14.35,14.35,0,0,0,0,28.69h94.39a11.59,11.59,0,0,0,6.06-21.47Z" transform="translate(0.03 0.16)" style="fill: #fcfcfc" />
+                            <path d="M464.55,272.6a24.58,24.58,0,0,0-16.67,21.87,18.23,18.23,0,0,0-6.42-1.15,18.44,18.44,0,0,0-18.09,14.95H423" transform="translate(0.03 0.16)" style="fill: none;stroke: #fff;stroke-linecap: round;stroke-miterlimit: 10;stroke-width: 4.287830013052769px" />
+                            <path d="M487.12,290.4A18.33,18.33,0,0,1,498.49,284a15.3,15.3,0,0,1,3.38-.23,22.87,22.87,0,0,1,3.4.32,20.66,20.66,0,0,1,6.37,2.44,19.55,19.55,0,0,1,8.49,10.35c.16.54.37,1.07.5,1.62l.35,1.65a22.17,22.17,0,0,1,.21,3.35,17,17,0,0,1-1.29,6.44,21.2,21.2,0,0,0,.23-6.4,19.45,19.45,0,0,0-1.58-6,19.7,19.7,0,0,0-8-9.1,19.32,19.32,0,0,0-5.67-2.3,20.63,20.63,0,0,0-17.73,4.34Z" transform="translate(0.03 0.16)" style="fill: #e3e7ee" />
+                            <path d="M515.2,308.27a10.53,10.53,0,0,1,7.53,2.84,11.81,11.81,0,0,1,2.55,3.38,12.27,12.27,0,0,1,1.17,4.11,12.72,12.72,0,0,1-.37,4.26,11.57,11.57,0,0,1-1.89,3.8,10.54,10.54,0,0,1-6.87,4.19,13.29,13.29,0,0,0,5.46-5.13,11.62,11.62,0,0,0,1.51-6.92,11.77,11.77,0,0,0-2.77-6.51A13.3,13.3,0,0,0,515.2,308.27Z" transform="translate(0.03 0.16)" style="fill: #e3e7ee" />
+                        </g>
+                    </g>
+                    <g id="plane" style="mix-blend-mode: hard-light">
+                        <g>
+                            <path d="M732.44,345.05l6.19-13.42-4.42-1.3-16.5,10.16-48.3-14.17a14.71,14.71,0,0,0-8.93.77s-4.15,0-3.79,3a5.4,5.4,0,0,0,3.1,4.14l50.36,14.79s13.41,4,23.07.47C736.88,348.17,735.53,346.55,732.44,345.05Z" transform="translate(0.03 0.16)" style="fill: #fff" />
+                            <g>
+                                <g>
+                                    <path d="M703.45,347.78l-9.25-2.71a1.4,1.4,0,0,0-.28-.06l-1.26,4.27.28.1,9.25,2.72.25,0,1.26-4.28Z" transform="translate(0.03 0.16)" style="fill: #fff" />
+                                    <path d="M705,350.57h0a2.26,2.26,0,0,0-1.28-2.7l-1.26,4.28A2.26,2.26,0,0,0,705,350.57Z" transform="translate(0.03 0.16)" style="fill: #fb542c" />
+                                    <path d="M691.42,346.59h0a2.26,2.26,0,0,0,1.25,2.69l1.26-4.27A2.24,2.24,0,0,0,691.42,346.59Z" transform="translate(0.03 0.16)" style="fill: #fb542c" />
+                                </g>
+                                <polygon points="697.41 342.31 684.4 338.49 702.59 350.21 712.43 353.1 697.41 342.31" style="fill: #f3e9eb" />
+                            </g>
+                            <path d="M663.59,335.45a6,6,0,0,1,6.82-2.63l59.66,17.51c.52-.11,1-.24,1.55-.39l-64-18.79a7.2,7.2,0,0,0-8.11,3.09l0,0Z" transform="translate(0.03 0.16)" style="fill: #fb542c" />
+                            <g>
+                                <circle cx="671.66" cy="331.65" r="0.46" style="fill: #3d3d3d" />
+                                <circle cx="674.12" cy="332.37" r="0.46" style="fill: #3d3d3d" />
+                                <circle cx="676.58" cy="333.09" r="0.46" style="fill: #3d3d3d" />
+                                <circle cx="679.04" cy="333.81" r="0.46" style="fill: #3d3d3d" />
+                                <circle cx="681.5" cy="334.53" r="0.46" style="fill: #3d3d3d" />
+                                <circle cx="683.96" cy="335.26" r="0.46" style="fill: #3d3d3d" />
+                                <circle cx="686.42" cy="335.98" r="0.46" style="fill: #3d3d3d" />
+                                <circle cx="688.88" cy="336.7" r="0.46" style="fill: #3d3d3d" />
+                                <circle cx="691.34" cy="337.42" r="0.46" style="fill: #3d3d3d" />
+                                <circle cx="693.75" cy="338.13" r="0.46" style="fill: #3d3d3d" />
+                                <circle cx="696.21" cy="338.85" r="0.46" style="fill: #3d3d3d" />
+                                <circle cx="698.67" cy="339.58" r="0.46" style="fill: #3d3d3d" />
+                                <circle cx="701.13" cy="340.3" r="0.46" style="fill: #3d3d3d" />
+                                <circle cx="703.59" cy="341.02" r="0.46" style="fill: #3d3d3d" />
+                                <circle cx="706.05" cy="341.74" r="0.46" style="fill: #3d3d3d" />
+                                <circle cx="708.51" cy="342.46" r="0.46" style="fill: #3d3d3d" />
+                            </g>
+                            <path d="M666.9,327.86l-3.06-1.75a12,12,0,0,0-3.16.9l5.64,2.83Z" transform="translate(0.03 0.16)" style="fill: #3d3d3d" />
+                        </g>
+                        <g id="logoPlane">
+                            <g style="opacity: 0;mix-blend-mode: screen">
+                                <path d="M738,341c0-5.39-3.12-8.56-8-11h-6c-11.45,5.72-11.44,17.28,0,23h10C738.3,351.32,738,345,738,341Z" transform="translate(0.03 0.16)" style="fill: #fff" />
+                                <path d="M726.86,346.68a5.14,5.14,0,1,1,5.21-5.14.5.5,0,0,1-.5.5.5.5,0,0,1-.5-.5,4.2,4.2,0,1,0-2.27,3.67.51.51,0,0,1,.67.22.5.5,0,0,1-.22.68A5.32,5.32,0,0,1,726.86,346.68Z" transform="translate(0.03 0.16)" style="fill: #fff" />
+                                <polygon points="727.36 343.83 730.79 347.73 731.26 347.32 730.39 344.76 727.83 343.42 727.36 343.83" style="fill: #fff" />
+                                <path d="M730.54,345.11l1.5-1.25s.46-1.08-.78-.93l-1.5,1.35" transform="translate(0.03 0.16)" style="fill: #fff" />
+                            </g>
+                            <g>
+                                <image width="24" height="24" transform="translate(715.03 330.16)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsSAAALEgHS3X78AAACDUlEQVRIS42V627bMAyFPzW241yGtQX6/m9YDEuT5mLH/UEei3LsbAQEWRJ1yEOKdBqGgf+QtLD/z8vVk7MU5mcGhvD9IEsGBPriI4UZDOwe5nvYL2TOQASugNrnle+BAfZAB9x8lqHCyNSAwAXcAhtgDTSYETDwK3AGvoGLr2FiJBqI4A2wA3752GNGpN9h4Efgrw8wQ0VOdCHGvMbAfwPvwJuv12QGdwc7uL72egfufa9gIO9bzOt34AMz1JLBwZzZYEwTxuiK5aMnJD0ykPcbzMAb8ApsXafz8eLAjX93WB6OwAkzJCZUlO+9wkKx99H6vuJ9wZgoPzXmwM51G9cd62bKYOVKa3JSe8zDA+Zd5WMbdNugr3pJhBBJoqGVlCifnp6wwjT4ug53HhhIBBYTtcK82/l6i+XmNdyvKT0fRQoR+IrF+uJgNZaPjevrCW9dX28/jlEq31AoOr/w5aMlP11V9t6N1FhuILcNMR8NTRncyAkVeMJeTEPuSYmyXZwxx9STZlvFndwCDpR950YupAuWEzCWn1ir+PbzWQPaEIujrxXjL3Ie1uT2cAb++FCRLTJQmLqwjoxUG2rfahEnPz+RW4Xuk2Z+mUv/A73zaY0obGdymxhZTOsAysJSZ5z7s+m9i3XPBBzmGYxnYV76huxIBJ7NwVSiclGdLnHvAVjyzECUOZqL1KP8ACPrwySqTUJuAAAAAElFTkSuQmCC" style="opacity: 0.75;mix-blend-mode: screen" />
+                                <g>
+                                    <path d="M726.86,346.68a5.14,5.14,0,1,1,5.21-5.14.5.5,0,0,1-.5.5.5.5,0,0,1-.5-.5,4.2,4.2,0,1,0-2.27,3.67.51.51,0,0,1,.67.22.5.5,0,0,1-.22.68A5.32,5.32,0,0,1,726.86,346.68Z" transform="translate(0.03 0.16)" style="fill: #fb542c" />
+                                    <polygon points="727.36 343.83 730.79 347.73 731.26 347.32 730.39 344.76 727.83 343.42 727.36 343.83" style="fill: #fb542c" />
+                                    <path d="M730.54,345.11l1.5-1.25s.46-1.08-.78-.93l-1.5,1.35" transform="translate(0.03 0.16)" style="fill: #fb542c" />
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                    <rect id="rectCache" x="722.11" y="328.14" width="16.55" height="30.33" style="fill: #c9c9c9" />
+                    <g id="flocons2" style="opacity: 0.5">
+                        <circle cx="735.01" cy="435.86" r="3.22" style="fill: #fff" />
+                        <circle cx="761.86" cy="409.01" r="3.22" style="fill: #fff" />
+                        <circle cx="788.71" cy="435.86" r="3.22" style="fill: #fff" />
+                        <circle cx="708.16" cy="382.15" r="3.22" style="fill: #fff" />
+                        <circle cx="788.71" cy="382.15" r="3.22" style="fill: #d8d8d8" />
+                        <circle cx="761.86" cy="463.53" r="3.22" style="fill: #FFFFFF" />
+                        <circle cx="735.01" cy="382.15" r="3.22" style="fill: #FFFFFF" />
+                        <circle cx="708.16" cy="409.01" r="3.22" style="fill: #d8d8d8" />
+                        <circle cx="708.16" cy="462.71" r="3.22" style="fill: #fff" />
+                        <circle cx="735.01" cy="570.12" r="3.22" style="fill: #fff" />
+                        <circle cx="761.86" cy="543.27" r="3.22" style="fill: #fff" />
+                        <circle cx="788.71" cy="570.12" r="3.22" style="fill: #fff" />
+                        <circle cx="708.16" cy="516.41" r="3.22" style="fill: #fff" />
+                        <circle cx="788.71" cy="516.41" r="3.22" style="fill: #d8d8d8" />
+                        <circle cx="761.86" cy="597.79" r="3.22" style="fill: #FFFFFF" />
+                        <circle cx="735.01" cy="516.41" r="3.22" style="fill: #FFFFFF" />
+                        <circle cx="708.16" cy="543.27" r="3.22" style="fill: #d8d8d8" />
+                        <circle cx="708.16" cy="596.97" r="3.22" style="fill: #fff" />
+                        <circle cx="735.14" cy="301.82" r="3.22" style="fill: #fff" />
+                        <circle cx="762" cy="274.97" r="3.22" style="fill: #fff" />
+                        <circle cx="788.85" cy="301.82" r="3.22" style="fill: #fff" />
+                        <circle cx="708.29" cy="248.11" r="3.22" style="fill: #fff" />
+                        <circle cx="788.85" cy="248.11" r="3.22" style="fill: #d8d8d8" />
+                        <circle cx="762" cy="329.49" r="3.22" style="fill: #FFFFFF" />
+                        <circle cx="735.14" cy="248.11" r="3.22" style="fill: #FFFFFF" />
+                        <circle cx="708.29" cy="274.97" r="3.22" style="fill: #d8d8d8" />
+                        <circle cx="708.29" cy="328.67" r="3.22" style="fill: #fff" />
+                        <circle cx="735.01" cy="167.78" r="3.22" style="fill: #fff" />
+                        <circle cx="761.86" cy="140.92" r="3.22" style="fill: #fff" />
+                        <circle cx="788.71" cy="167.78" r="3.22" style="fill: #fff" />
+                        <circle cx="708.16" cy="114.07" r="3.22" style="fill: #fff" />
+                        <circle cx="788.71" cy="114.07" r="3.22" style="fill: #d8d8d8" />
+                        <circle cx="761.86" cy="195.45" r="3.22" style="fill: #FFFFFF" />
+                        <circle cx="735.01" cy="114.07" r="3.22" style="fill: #FFFFFF" />
+                        <circle cx="708.16" cy="140.92" r="3.22" style="fill: #d8d8d8" />
+                        <circle cx="708.16" cy="194.63" r="3.22" style="fill: #fff" />
+                        <circle cx="600.75" cy="435.64" r="3.22" style="fill: #fff" />
+                        <circle cx="627.6" cy="408.79" r="3.22" style="fill: #fff" />
+                        <circle cx="654.45" cy="435.64" r="3.22" style="fill: #fff" />
+                        <circle cx="573.9" cy="381.94" r="3.22" style="fill: #fff" />
+                        <circle cx="654.45" cy="381.94" r="3.22" style="fill: #d8d8d8" />
+                        <circle cx="627.6" cy="463.31" r="3.22" style="fill: #FFFFFF" />
+                        <circle cx="600.75" cy="381.94" r="3.22" style="fill: #FFFFFF" />
+                        <circle cx="573.9" cy="408.79" r="3.22" style="fill: #d8d8d8" />
+                        <circle cx="573.9" cy="462.49" r="3.22" style="fill: #fff" />
+                        <circle cx="600.75" cy="569.9" r="3.22" style="fill: #fff" />
+                        <circle cx="627.6" cy="543.05" r="3.22" style="fill: #fff" />
+                        <circle cx="654.45" cy="569.9" r="3.22" style="fill: #fff" />
+                        <circle cx="573.9" cy="516.19" r="3.22" style="fill: #fff" />
+                        <circle cx="654.45" cy="516.19" r="3.22" style="fill: #d8d8d8" />
+                        <circle cx="627.6" cy="597.57" r="3.22" style="fill: #FFFFFF" />
+                        <circle cx="600.75" cy="516.19" r="3.22" style="fill: #FFFFFF" />
+                        <circle cx="573.9" cy="543.05" r="3.22" style="fill: #d8d8d8" />
+                        <circle cx="573.9" cy="596.75" r="3.22" style="fill: #fff" />
+                        <circle cx="600.89" cy="301.6" r="3.22" style="fill: #fff" />
+                        <circle cx="627.74" cy="274.75" r="3.22" style="fill: #fff" />
+                        <circle cx="654.59" cy="301.6" r="3.22" style="fill: #fff" />
+                        <circle cx="574.03" cy="247.9" r="3.22" style="fill: #fff" />
+                        <circle cx="654.59" cy="247.9" r="3.22" style="fill: #d8d8d8" />
+                        <circle cx="627.74" cy="329.27" r="3.22" style="fill: #FFFFFF" />
+                        <circle cx="600.89" cy="247.9" r="3.22" style="fill: #FFFFFF" />
+                        <circle cx="574.03" cy="274.75" r="3.22" style="fill: #d8d8d8" />
+                        <circle cx="574.03" cy="328.45" r="3.22" style="fill: #fff" />
+                        <circle cx="600.75" cy="167.56" r="3.22" style="fill: #fff" />
+                        <circle cx="627.6" cy="140.71" r="3.22" style="fill: #fff" />
+                        <circle cx="654.45" cy="167.56" r="3.22" style="fill: #fff" />
+                        <circle cx="573.9" cy="113.85" r="3.22" style="fill: #fff" />
+                        <circle cx="654.45" cy="113.85" r="3.22" style="fill: #d8d8d8" />
+                        <circle cx="627.6" cy="195.23" r="3.22" style="fill: #FFFFFF" />
+                        <circle cx="600.75" cy="113.85" r="3.22" style="fill: #FFFFFF" />
+                        <circle cx="573.9" cy="140.71" r="3.22" style="fill: #d8d8d8" />
+                        <circle cx="573.9" cy="194.41" r="3.22" style="fill: #fff" />
+                        <circle cx="466.36" cy="435.42" r="3.22" style="fill: #fff" />
+                        <circle cx="493.21" cy="408.57" r="3.22" style="fill: #fff" />
+                        <circle cx="520.06" cy="435.42" r="3.22" style="fill: #fff" />
+                        <circle cx="439.5" cy="381.72" r="3.22" style="fill: #fff" />
+                        <circle cx="520.06" cy="381.72" r="3.22" style="fill: #d8d8d8" />
+                        <circle cx="493.21" cy="463.09" r="3.22" style="fill: #FFFFFF" />
+                        <circle cx="466.36" cy="381.72" r="3.22" style="fill: #FFFFFF" />
+                        <circle cx="439.5" cy="408.57" r="3.22" style="fill: #d8d8d8" />
+                        <circle cx="439.5" cy="462.27" r="3.22" style="fill: #fff" />
+                        <circle cx="466.36" cy="569.68" r="3.22" style="fill: #fff" />
+                        <circle cx="493.21" cy="542.83" r="3.22" style="fill: #fff" />
+                        <circle cx="520.06" cy="569.68" r="3.22" style="fill: #fff" />
+                        <circle cx="439.5" cy="515.98" r="3.22" style="fill: #fff" />
+                        <circle cx="520.06" cy="515.98" r="3.22" style="fill: #d8d8d8" />
+                        <circle cx="493.21" cy="597.35" r="3.22" style="fill: #FFFFFF" />
+                        <circle cx="466.36" cy="515.98" r="3.22" style="fill: #FFFFFF" />
+                        <circle cx="439.5" cy="542.83" r="3.22" style="fill: #d8d8d8" />
+                        <circle cx="439.5" cy="596.53" r="3.22" style="fill: #fff" />
+                        <circle cx="466.49" cy="301.38" r="3.22" style="fill: #fff" />
+                        <circle cx="493.34" cy="274.53" r="3.22" style="fill: #fff" />
+                        <circle cx="520.19" cy="301.38" r="3.22" style="fill: #fff" />
+                        <circle cx="439.64" cy="247.68" r="3.22" style="fill: #fff" />
+                        <circle cx="520.19" cy="247.68" r="3.22" style="fill: #d8d8d8" />
+                        <circle cx="493.34" cy="329.05" r="3.22" style="fill: #FFFFFF" />
+                        <circle cx="466.49" cy="247.68" r="3.22" style="fill: #FFFFFF" />
+                        <circle cx="439.64" cy="274.53" r="3.22" style="fill: #d8d8d8" />
+                        <circle cx="439.64" cy="328.23" r="3.22" style="fill: #fff" />
+                        <circle cx="466.36" cy="167.34" r="3.22" style="fill: #fff" />
+                        <circle cx="493.21" cy="140.49" r="3.22" style="fill: #fff" />
+                        <circle cx="520.06" cy="167.34" r="3.22" style="fill: #fff" />
+                        <circle cx="439.5" cy="113.64" r="3.22" style="fill: #fff" />
+                        <circle cx="520.06" cy="113.64" r="3.22" style="fill: #d8d8d8" />
+                        <circle cx="493.21" cy="195.01" r="3.22" style="fill: #FFFFFF" />
+                        <circle cx="466.36" cy="113.64" r="3.22" style="fill: #FFFFFF" />
+                        <circle cx="439.5" cy="140.49" r="3.22" style="fill: #d8d8d8" />
+                        <circle cx="439.5" cy="194.19" r="3.22" style="fill: #fff" />
+                        <circle cx="331.69" cy="435.2" r="3.22" style="fill: #fff" />
+                        <circle cx="358.55" cy="408.35" r="3.22" style="fill: #fff" />
+                        <circle cx="385.4" cy="435.2" r="3.22" style="fill: #fff" />
+                        <circle cx="304.84" cy="381.5" r="3.22" style="fill: #fff" />
+                        <circle cx="385.4" cy="381.5" r="3.22" style="fill: #d8d8d8" />
+                        <circle cx="358.55" cy="462.87" r="3.22" style="fill: #FFFFFF" />
+                        <circle cx="331.69" cy="381.5" r="3.22" style="fill: #FFFFFF" />
+                        <circle cx="304.84" cy="408.35" r="3.22" style="fill: #d8d8d8" />
+                        <circle cx="304.84" cy="462.05" r="3.22" style="fill: #fff" />
+                        <circle cx="331.69" cy="569.46" r="3.22" style="fill: #fff" />
+                        <circle cx="358.55" cy="542.61" r="3.22" style="fill: #fff" />
+                        <circle cx="385.4" cy="569.46" r="3.22" style="fill: #fff" />
+                        <circle cx="304.84" cy="515.76" r="3.22" style="fill: #fff" />
+                        <circle cx="385.4" cy="515.76" r="3.22" style="fill: #d8d8d8" />
+                        <circle cx="358.55" cy="597.13" r="3.22" style="fill: #FFFFFF" />
+                        <circle cx="331.69" cy="515.76" r="3.22" style="fill: #FFFFFF" />
+                        <circle cx="304.84" cy="542.61" r="3.22" style="fill: #d8d8d8" />
+                        <circle cx="304.84" cy="596.31" r="3.22" style="fill: #fff" />
+                        <circle cx="331.83" cy="301.16" r="3.22" style="fill: #fff" />
+                        <circle cx="358.68" cy="274.31" r="3.22" style="fill: #fff" />
+                        <circle cx="385.53" cy="301.16" r="3.22" style="fill: #fff" />
+                        <circle cx="304.98" cy="247.46" r="3.22" style="fill: #fff" />
+                        <circle cx="385.53" cy="247.46" r="3.22" style="fill: #d8d8d8" />
+                        <circle cx="358.68" cy="328.83" r="3.22" style="fill: #FFFFFF" />
+                        <circle cx="331.83" cy="247.46" r="3.22" style="fill: #FFFFFF" />
+                        <circle cx="304.98" cy="274.31" r="3.22" style="fill: #d8d8d8" />
+                        <circle cx="304.98" cy="328.01" r="3.22" style="fill: #fff" />
+                        <circle cx="331.69" cy="167.12" r="3.22" style="fill: #fff" />
+                        <circle cx="358.55" cy="140.27" r="3.22" style="fill: #fff" />
+                        <circle cx="385.4" cy="167.12" r="3.22" style="fill: #fff" />
+                        <circle cx="304.84" cy="113.42" r="3.22" style="fill: #fff" />
+                        <circle cx="385.4" cy="113.42" r="3.22" style="fill: #d8d8d8" />
+                        <circle cx="358.55" cy="194.79" r="3.22" style="fill: #FFFFFF" />
+                        <circle cx="331.69" cy="113.42" r="3.22" style="fill: #FFFFFF" />
+                        <circle cx="304.84" cy="140.27" r="3.22" style="fill: #d8d8d8" />
+                        <circle cx="304.84" cy="193.97" r="3.22" style="fill: #fff" />
+                        <circle cx="196.9" cy="434.98" r="3.22" style="fill: #fff" />
+                        <circle cx="223.75" cy="408.13" r="3.22" style="fill: #fff" />
+                        <circle cx="250.6" cy="434.98" r="3.22" style="fill: #fff" />
+                        <circle cx="170.04" cy="381.28" r="3.22" style="fill: #fff" />
+                        <circle cx="250.6" cy="381.28" r="3.22" style="fill: #d8d8d8" />
+                        <circle cx="223.75" cy="462.65" r="3.22" style="fill: #FFFFFF" />
+                        <circle cx="196.9" cy="381.28" r="3.22" style="fill: #FFFFFF" />
+                        <circle cx="170.04" cy="408.13" r="3.22" style="fill: #d8d8d8" />
+                        <circle cx="170.04" cy="461.84" r="3.22" style="fill: #fff" />
+                        <circle cx="196.9" cy="569.24" r="3.22" style="fill: #fff" />
+                        <circle cx="223.75" cy="542.39" r="3.22" style="fill: #fff" />
+                        <circle cx="250.6" cy="569.24" r="3.22" style="fill: #fff" />
+                        <circle cx="170.04" cy="515.54" r="3.22" style="fill: #fff" />
+                        <circle cx="250.6" cy="515.54" r="3.22" style="fill: #d8d8d8" />
+                        <circle cx="223.75" cy="596.91" r="3.22" style="fill: #FFFFFF" />
+                        <circle cx="196.9" cy="515.54" r="3.22" style="fill: #FFFFFF" />
+                        <circle cx="170.04" cy="542.39" r="3.22" style="fill: #d8d8d8" />
+                        <circle cx="170.04" cy="596.1" r="3.22" style="fill: #fff" />
+                        <circle cx="197.03" cy="300.94" r="3.22" style="fill: #fff" />
+                        <circle cx="223.88" cy="274.09" r="3.22" style="fill: #fff" />
+                        <circle cx="250.73" cy="300.94" r="3.22" style="fill: #fff" />
+                        <circle cx="170.18" cy="247.24" r="3.22" style="fill: #fff" />
+                        <circle cx="250.73" cy="247.24" r="3.22" style="fill: #d8d8d8" />
+                        <circle cx="223.88" cy="328.61" r="3.22" style="fill: #FFFFFF" />
+                        <circle cx="197.03" cy="247.24" r="3.22" style="fill: #FFFFFF" />
+                        <circle cx="170.18" cy="274.09" r="3.22" style="fill: #d8d8d8" />
+                        <circle cx="170.18" cy="327.8" r="3.22" style="fill: #fff" />
+                        <circle cx="196.9" cy="166.9" r="3.22" style="fill: #fff" />
+                        <circle cx="223.75" cy="140.05" r="3.22" style="fill: #fff" />
+                        <circle cx="250.6" cy="166.9" r="3.22" style="fill: #fff" />
+                        <circle cx="170.04" cy="113.2" r="3.22" style="fill: #fff" />
+                        <circle cx="250.6" cy="113.2" r="3.22" style="fill: #d8d8d8" />
+                        <circle cx="223.75" cy="194.57" r="3.22" style="fill: #FFFFFF" />
+                        <circle cx="196.9" cy="113.2" r="3.22" style="fill: #FFFFFF" />
+                        <circle cx="170.04" cy="140.05" r="3.22" style="fill: #d8d8d8" />
+                        <circle cx="170.04" cy="193.75" r="3.22" style="fill: #fff" />
+                    </g>
+                    <g>
+                        <rect x="656.18" y="291.57" width="47.97" height="302.3" style="fill: #61b1e0" />
+                        <rect x="680.68" y="247.66" width="23.47" height="43.9" style="fill: #61b1e0" />
+                        <polygon points="704.15 247.66 698.92 247.66 704.15 192.8 704.15 192.8 704.15 247.66" style="fill: #61b1e0" />
+                        <polygon points="709.38 247.66 704.15 247.66 704.15 192.8 704.15 192.8 709.38 247.66" style="fill: #5584ad" />
+                        <rect x="661.72" y="296.17" width="3.75" height="297.7" style="fill: #5584ad" />
+                        <rect x="672.45" y="296.17" width="3.75" height="297.7" style="fill: #5584ad" />
+                        <rect x="683.19" y="296.17" width="3.75" height="297.7" style="fill: #5584ad" />
+                        <rect x="693.93" y="296.17" width="3.75" height="297.7" style="fill: #5584ad" />
+                        <polygon points="716.64 291.57 704.15 291.57 704.15 291.57 704.15 593.87 716.64 593.87 716.64 291.57" style="fill: #2b638d" />
+                        <rect x="704.15" y="247.66" width="12.49" height="43.9" style="fill: #2b638d" />
+                    </g>
+                    <g>
+                        <rect x="193.12" y="373.46" width="43.08" height="220.7" style="fill: #61b1e0" />
+                        <rect x="236.19" y="373.46" width="43.08" height="220.7" style="fill: #2b638d" />
+                        <rect x="194.59" y="394.27" width="40.14" height="7.45" style="fill: #5584ad" />
+                        <rect x="195" y="381.73" width="40.14" height="7.45" style="fill: #5584ad" />
+                        <rect x="194.59" y="406.79" width="40.14" height="7.45" style="fill: #5584ad" />
+                        <rect x="194.59" y="431.83" width="40.14" height="7.45" style="fill: #5584ad" />
+                        <rect x="194.59" y="456.87" width="40.14" height="7.45" style="fill: #5584ad" />
+                        <rect x="194.59" y="494.43" width="40.14" height="7.45" style="fill: #5584ad" />
+                        <rect x="194.59" y="419.31" width="40.14" height="7.45" style="fill: #5584ad" />
+                        <rect x="194.59" y="444.35" width="40.14" height="7.45" style="fill: #5584ad" />
+                        <rect x="194.59" y="469.39" width="40.14" height="7.45" style="fill: #5584ad" />
+                        <rect x="194.59" y="481.91" width="40.14" height="7.45" style="fill: #5584ad" />
+                        <rect x="194.59" y="506.95" width="40.14" height="7.45" style="fill: #5584ad" />
+                        <rect x="194.59" y="519.47" width="40.14" height="7.45" style="fill: #5584ad" />
+                        <rect x="194.59" y="544.51" width="40.14" height="7.45" style="fill: #5584ad" />
+                        <rect x="194.59" y="569.55" width="40.14" height="7.45" style="fill: #5584ad" />
+                        <rect x="194.59" y="531.99" width="40.14" height="7.45" style="fill: #5584ad" />
+                        <rect x="194.59" y="557.03" width="40.14" height="7.45" style="fill: #5584ad" />
+                        <rect x="194.59" y="582.07" width="40.14" height="7.45" style="fill: #5584ad" />
+                    </g>
+                    <g>
+                        <rect x="249.83" y="327.52" width="47.97" height="266.15" style="fill: #61b1e0" />
+                        <rect x="297.8" y="327.52" width="47.97" height="266.15" style="fill: #2b638d" />
+                        <g>
+                            <rect x="251.47" y="337.52" width="12.61" height="8.98" style="fill: #5584ad" />
+                            <rect x="267.51" y="337.52" width="12.61" height="8.98" style="fill: #5584ad" />
+                            <rect x="283.55" y="337.52" width="12.61" height="8.98" style="fill: #5584ad" />
+                        </g>
+                        <g>
+                            <rect x="251.47" y="367.72" width="12.61" height="8.98" style="fill: #5584ad" />
+                            <rect x="267.51" y="367.72" width="12.61" height="8.98" style="fill: #5584ad" />
+                            <rect x="283.55" y="367.72" width="12.61" height="8.98" style="fill: #5584ad" />
+                        </g>
+                        <g>
+                            <rect x="251.47" y="397.92" width="12.61" height="8.98" style="fill: #5584ad" />
+                            <rect x="267.51" y="397.92" width="12.61" height="8.98" style="fill: #5584ad" />
+                            <rect x="283.55" y="397.92" width="12.61" height="8.98" style="fill: #5584ad" />
+                        </g>
+                        <g>
+                            <rect x="251.47" y="428.12" width="12.61" height="8.98" style="fill: #5584ad" />
+                            <rect x="267.51" y="428.12" width="12.61" height="8.98" style="fill: #5584ad" />
+                            <rect x="283.55" y="428.12" width="12.61" height="8.98" style="fill: #5584ad" />
+                        </g>
+                        <g>
+                            <rect x="251.47" y="473.41" width="12.61" height="8.98" style="fill: #5584ad" />
+                            <rect x="267.51" y="473.41" width="12.61" height="8.98" style="fill: #5584ad" />
+                            <rect x="283.55" y="473.41" width="12.61" height="8.98" style="fill: #5584ad" />
+                        </g>
+                        <g>
+                            <rect x="251.47" y="503.61" width="12.61" height="8.98" style="fill: #5584ad" />
+                            <rect x="267.51" y="503.61" width="12.61" height="8.98" style="fill: #5584ad" />
+                            <rect x="283.55" y="503.61" width="12.61" height="8.98" style="fill: #5584ad" />
+                        </g>
+                        <g>
+                            <rect x="251.47" y="533.8" width="12.61" height="8.98" style="fill: #5584ad" />
+                            <rect x="267.51" y="533.8" width="12.61" height="8.98" style="fill: #5584ad" />
+                            <rect x="283.55" y="533.8" width="12.61" height="8.98" style="fill: #5584ad" />
+                        </g>
+                        <g>
+                            <rect x="251.47" y="564" width="12.61" height="8.98" style="fill: #5584ad" />
+                            <rect x="267.51" y="564" width="12.61" height="8.98" style="fill: #5584ad" />
+                            <rect x="283.55" y="564" width="12.61" height="8.98" style="fill: #5584ad" />
+                        </g>
+                        <rect x="251.47" y="352.62" width="44.7" height="8.98" style="fill: #5584ad" />
+                        <rect x="251.47" y="382.82" width="44.7" height="8.98" style="fill: #5584ad" />
+                        <rect x="251.47" y="413.02" width="44.7" height="8.98" style="fill: #5584ad" />
+                        <rect x="251.47" y="443.21" width="44.7" height="8.98" style="fill: #5584ad" />
+                        <rect x="251.47" y="458.31" width="44.7" height="8.98" style="fill: #5584ad" />
+                        <rect x="251.47" y="488.51" width="44.7" height="8.98" style="fill: #5584ad" />
+                        <rect x="251.47" y="518.71" width="44.7" height="8.98" style="fill: #5584ad" />
+                        <rect x="251.47" y="548.9" width="44.7" height="8.98" style="fill: #5584ad" />
+                        <rect x="251.47" y="579.1" width="44.7" height="8.98" style="fill: #5584ad" />
+                    </g>
+                    <g id="neige">
+                        <circle cx="252.92" cy="326.56" r="4.73" style="fill: #fff" />
+                        <circle cx="259.76" cy="328.33" r="2.69" style="fill: #fff" />
+                        <ellipse cx="270.5" cy="325.93" rx="4.6" ry="3.02" style="fill: #fff" />
+                        <circle cx="265.9" cy="327.29" r="4.38" style="fill: #fff" />
+                        <ellipse cx="276.56" cy="326.01" rx="6.29" ry="5.01" style="fill: #fff" />
+                        <ellipse cx="288.03" cy="325.64" rx="8.13" ry="6.02" style="fill: #fff" />
+                        <circle cx="297.78" cy="328.94" r="6.03" style="fill: #fff" />
+                        <ellipse cx="306.08" cy="326.13" rx="5.28" ry="3.22" style="fill: #fff" />
+                        <circle cx="314.79" cy="329.36" r="6.45" style="fill: #fff" />
+                        <ellipse cx="324.56" cy="326.91" rx="9.79" ry="5.91" style="fill: #fff" />
+                        <ellipse cx="334.34" cy="328.82" rx="9.79" ry="5.91" style="fill: #fff" />
+                        <ellipse cx="259.41" cy="325.93" rx="6.49" ry="3.02" style="fill: #fff" />
+                    </g>
+                    <g>
+                        <rect x="311.29" y="293.04" width="47.97" height="302.3" style="fill: #b1def1" />
+                        <rect x="359.26" y="293.04" width="47.97" height="302.3" style="fill: #2b638d" />
+                        <rect x="331.2" y="249.18" width="28.06" height="43.9" style="fill: #b1def1" />
+                        <rect x="359.26" y="249.18" width="28.06" height="43.9" style="fill: #2b638d" />
+                        <rect x="345.2" y="222.88" width="14.06" height="26.3" style="fill: #b1def1" />
+                        <rect x="359.26" y="222.88" width="14.06" height="26.3" style="fill: #2b638d" />
+                        <rect x="316.83" y="297.64" width="3.75" height="297.7" style="fill: #5584ad" />
+                        <rect x="327.57" y="297.64" width="3.75" height="297.7" style="fill: #5584ad" />
+                        <rect x="338.3" y="297.64" width="3.75" height="297.7" style="fill: #5584ad" />
+                        <rect x="349.04" y="297.64" width="3.75" height="297.7" style="fill: #5584ad" />
+                        <rect x="335.28" y="252.02" width="3.75" height="38.41" style="fill: #5584ad" />
+                        <rect x="343.62" y="252.02" width="3.75" height="38.41" style="fill: #5584ad" />
+                        <rect x="351.95" y="252.02" width="3.75" height="38.41" style="fill: #5584ad" />
+                        <rect x="350.08" y="224.35" width="3.75" height="22.03" style="fill: #5584ad" />
+                        <g>
+                            <polygon points="359.26 222.88 354.03 222.88 359.26 168.02 359.26 168.02 359.26 222.88" style="fill: #b1def1" />
+                            <polygon points="364.5 222.88 359.26 222.88 359.26 168.02 359.26 168.02 364.5 222.88" style="fill: #2b638d" />
+                        </g>
+                    </g>
+                    <g>
+                        <rect x="373.46" y="327.52" width="47.97" height="266.15" style="fill: #61b1e0" />
+                        <rect x="421.43" y="327.52" width="47.97" height="266.15" style="fill: #2b638d" />
+                        <g>
+                            <rect x="375.1" y="337.53" width="12.61" height="8.98" style="fill: #5584ad" />
+                            <rect x="391.14" y="337.53" width="12.61" height="8.98" style="fill: #5584ad" />
+                            <rect x="407.18" y="337.53" width="12.61" height="8.98" style="fill: #5584ad" />
+                        </g>
+                        <g>
+                            <rect x="375.1" y="367.73" width="12.61" height="8.98" style="fill: #5584ad" />
+                            <rect x="391.14" y="367.73" width="12.61" height="8.98" style="fill: #5584ad" />
+                            <rect x="407.18" y="367.73" width="12.61" height="8.98" style="fill: #5584ad" />
+                        </g>
+                        <g>
+                            <rect x="375.1" y="397.92" width="12.61" height="8.98" style="fill: #5584ad" />
+                            <rect x="391.14" y="397.92" width="12.61" height="8.98" style="fill: #5584ad" />
+                            <rect x="407.18" y="397.92" width="12.61" height="8.98" style="fill: #5584ad" />
+                        </g>
+                        <g>
+                            <rect x="375.1" y="428.12" width="12.61" height="8.98" style="fill: #5584ad" />
+                            <rect x="391.14" y="428.12" width="12.61" height="8.98" style="fill: #5584ad" />
+                            <rect x="407.18" y="428.12" width="12.61" height="8.98" style="fill: #5584ad" />
+                        </g>
+                        <g>
+                            <rect x="375.1" y="473.42" width="12.61" height="8.98" style="fill: #5584ad" />
+                            <rect x="391.14" y="473.42" width="12.61" height="8.98" style="fill: #5584ad" />
+                            <rect x="407.18" y="473.42" width="12.61" height="8.98" style="fill: #5584ad" />
+                        </g>
+                        <g>
+                            <rect x="375.1" y="503.61" width="12.61" height="8.98" style="fill: #5584ad" />
+                            <rect x="391.14" y="503.61" width="12.61" height="8.98" style="fill: #5584ad" />
+                            <rect x="407.18" y="503.61" width="12.61" height="8.98" style="fill: #5584ad" />
+                        </g>
+                        <g>
+                            <rect x="375.1" y="533.81" width="12.61" height="8.98" style="fill: #5584ad" />
+                            <rect x="391.14" y="533.81" width="12.61" height="8.98" style="fill: #5584ad" />
+                            <rect x="407.18" y="533.81" width="12.61" height="8.98" style="fill: #5584ad" />
+                        </g>
+                        <g>
+                            <rect x="375.1" y="564.01" width="12.61" height="8.98" style="fill: #5584ad" />
+                            <rect x="391.14" y="564.01" width="12.61" height="8.98" style="fill: #5584ad" />
+                            <rect x="407.18" y="564.01" width="12.61" height="8.98" style="fill: #5584ad" />
+                        </g>
+                        <rect x="375.1" y="352.63" width="44.7" height="8.98" style="fill: #5584ad" />
+                        <rect x="375.1" y="382.83" width="44.7" height="8.98" style="fill: #5584ad" />
+                        <rect x="375.1" y="413.02" width="44.7" height="8.98" style="fill: #5584ad" />
+                        <rect x="375.1" y="443.22" width="44.7" height="8.98" style="fill: #5584ad" />
+                        <rect x="375.1" y="458.32" width="44.7" height="8.98" style="fill: #5584ad" />
+                        <rect x="375.1" y="488.51" width="44.7" height="8.98" style="fill: #5584ad" />
+                        <rect x="375.1" y="518.71" width="44.7" height="8.98" style="fill: #5584ad" />
+                        <rect x="375.1" y="548.91" width="44.7" height="8.98" style="fill: #5584ad" />
+                        <rect x="375.1" y="579.1" width="44.7" height="8.98" style="fill: #5584ad" />
+                    </g>
+                    <g>
+                        <path d="M533.34,279.89v314.3h48V279.89Zm46.33,307.69H535V577h44.7Zm0-17.83H535v-10.6h44.7Zm0-17.83H535v-10.6h44.7Zm0-17.83H535v-10.6h44.7Zm0-17.83H535v-10.6h44.7Zm0-17.83H535v-10.6h44.7Zm0-17.83H535V470h44.7Zm0-17.83H535v-10.6h44.7Zm0-17.83H535v-10.6h44.7Zm0-17.83H535v-10.6h44.7Zm0-17.83H535v-10.6h44.7Zm0-17.83H535v-10.6h44.7Zm0-17.83H535V363h44.7Zm0-17.82H535V345.19h44.7Zm0-17.83H535V327.36h44.7Zm0-17.83H535V309.53h44.7Zm.46-17.87H535.44v-10.6h44.69Z" transform="translate(0.03 0.16)" style="fill: #b1def1" />
+                        <polygon points="581.34 280.05 581.34 594.35 592.79 594.35 592.79 291.87 602.4 291.87 602.4 594.35 610.24 594.35 610.24 291.87 619.85 291.87 619.85 594.35 629.3 594.35 629.3 280.05 581.34 280.05" style="fill: #61b1e0" />
+                        <rect x="535" y="309.69" width="44.7" height="10.6" style="fill: #5584ad" />
+                        <rect x="535.46" y="291.83" width="44.7" height="10.6" style="fill: #5584ad" />
+                        <rect x="535" y="327.52" width="44.7" height="10.6" style="fill: #5584ad" />
+                        <rect x="535" y="363.18" width="44.7" height="10.6" style="fill: #5584ad" />
+                        <rect x="535" y="398.84" width="44.7" height="10.6" style="fill: #5584ad" />
+                        <rect x="535" y="452.33" width="44.7" height="10.6" style="fill: #5584ad" />
+                        <rect x="535" y="345.35" width="44.7" height="10.6" style="fill: #5584ad" />
+                        <rect x="535" y="381.01" width="44.7" height="10.6" style="fill: #5584ad" />
+                        <rect x="535" y="416.67" width="44.7" height="10.6" style="fill: #5584ad" />
+                        <rect x="535" y="434.5" width="44.7" height="10.6" style="fill: #5584ad" />
+                        <rect x="535" y="470.16" width="44.7" height="10.6" style="fill: #5584ad" />
+                        <rect x="535" y="487.99" width="44.7" height="10.6" style="fill: #5584ad" />
+                        <rect x="535" y="523.65" width="44.7" height="10.6" style="fill: #5584ad" />
+                        <rect x="535" y="559.31" width="44.7" height="10.6" style="fill: #5584ad" />
+                        <rect x="535" y="505.82" width="44.7" height="10.6" style="fill: #5584ad" />
+                        <rect x="535" y="541.48" width="44.7" height="10.6" style="fill: #5584ad" />
+                        <rect x="535" y="577.14" width="44.7" height="10.6" style="fill: #5584ad" />
+                        <polygon points="592.79 291.87 592.79 594.35 592.79 594.81 602.4 594.81 602.4 594.35 602.4 291.87 592.79 291.87" style="fill: #5584ad" />
+                        <polygon points="610.24 291.87 610.24 594.35 610.24 594.81 619.85 594.81 619.85 594.35 619.85 291.87 610.24 291.87" style="fill: #5584ad" />
+                    </g>
+                    <g id="neige-2" data-name="neige">
+                        <circle cx="624.58" cy="279.7" r="4.73" style="fill: #fff" />
+                        <circle cx="617.74" cy="281.47" r="2.69" style="fill: #fff" />
+                        <ellipse cx="607" cy="279.06" rx="4.6" ry="3.02" style="fill: #fff" />
+                        <circle cx="611.6" cy="280.43" r="4.38" style="fill: #fff" />
+                        <ellipse cx="600.94" cy="279.15" rx="6.29" ry="5.01" style="fill: #fff" />
+                        <ellipse cx="589.47" cy="278.78" rx="8.13" ry="6.02" style="fill: #fff" />
+                        <circle cx="579.72" cy="282.08" r="6.03" style="fill: #fff" />
+                        <ellipse cx="571.41" cy="279.27" rx="5.28" ry="3.22" style="fill: #fff" />
+                        <circle cx="562.71" cy="282.49" r="6.45" style="fill: #fff" />
+                        <ellipse cx="552.94" cy="280.05" rx="9.79" ry="5.91" style="fill: #fff" />
+                        <ellipse cx="543.15" cy="281.96" rx="9.79" ry="5.91" style="fill: #fff" />
+                        <ellipse cx="618.09" cy="279.06" rx="6.49" ry="3.02" style="fill: #fff" />
+                    </g>
+                    <g id="neige-3" data-name="neige">
+                        <circle cx="403.12" cy="293.01" r="4.73" style="fill: #fff" />
+                        <circle cx="396.28" cy="291.24" r="2.69" style="fill: #fff" />
+                        <ellipse cx="385.55" cy="293.65" rx="4.6" ry="3.02" style="fill: #fff" />
+                        <circle cx="390.15" cy="292.29" r="4.38" style="fill: #fff" />
+                        <ellipse cx="379.48" cy="293.56" rx="6.29" ry="5.01" style="fill: #fff" />
+                        <ellipse cx="368.01" cy="293.93" rx="8.13" ry="6.02" style="fill: #fff" />
+                        <circle cx="358.27" cy="290.63" r="6.03" style="fill: #fff" />
+                        <ellipse cx="349.96" cy="293.44" rx="5.28" ry="3.22" style="fill: #fff" />
+                        <circle cx="341.25" cy="290.22" r="6.45" style="fill: #fff" />
+                        <ellipse cx="331.49" cy="292.67" rx="9.79" ry="5.91" style="fill: #fff" />
+                        <ellipse cx="321.7" cy="290.76" rx="9.79" ry="5.91" style="fill: #fff" />
+                        <ellipse cx="396.64" cy="293.65" rx="6.49" ry="3.02" style="fill: #fff" />
+                    </g>
+                    <g id="neige-4" data-name="neige">
+                        <circle cx="659.23" cy="292.39" r="4.73" style="fill: #fff" />
+                        <circle cx="666.07" cy="290.62" r="2.69" style="fill: #fff" />
+                        <ellipse cx="676.8" cy="293.03" rx="4.6" ry="3.02" style="fill: #fff" />
+                        <circle cx="672.2" cy="291.67" r="4.38" style="fill: #fff" />
+                        <ellipse cx="682.87" cy="292.94" rx="6.29" ry="5.01" style="fill: #fff" />
+                        <ellipse cx="694.34" cy="293.31" rx="8.13" ry="6.02" style="fill: #fff" />
+                        <circle cx="704.08" cy="290.01" r="6.03" style="fill: #fff" />
+                        <ellipse cx="712.39" cy="292.82" rx="5.28" ry="3.22" style="fill: #fff" />
+                        <circle cx="721.1" cy="289.6" r="6.45" style="fill: #fff" />
+                        <ellipse cx="730.86" cy="292.04" rx="9.79" ry="5.91" style="fill: #fff" />
+                        <ellipse cx="740.65" cy="290.14" rx="9.79" ry="5.91" style="fill: #fff" />
+                        <ellipse cx="665.72" cy="293.03" rx="6.49" ry="3.02" style="fill: #fff" />
+                    </g>
+                    <g id="neige-5" data-name="neige">
+                        <circle cx="463.04" cy="326.99" r="4.73" style="fill: #fff" />
+                        <circle cx="456.19" cy="328.76" r="2.69" style="fill: #fff" />
+                        <ellipse cx="445.46" cy="326.35" rx="4.6" ry="3.02" style="fill: #fff" />
+                        <circle cx="450.06" cy="327.71" r="4.38" style="fill: #fff" />
+                        <ellipse cx="439.4" cy="326.44" rx="6.29" ry="5.01" style="fill: #fff" />
+                        <ellipse cx="427.92" cy="326.07" rx="8.13" ry="6.02" style="fill: #fff" />
+                        <circle cx="418.18" cy="329.37" r="6.03" style="fill: #fff" />
+                        <ellipse cx="409.87" cy="326.56" rx="5.28" ry="3.22" style="fill: #fff" />
+                        <circle cx="401.16" cy="329.78" r="6.45" style="fill: #fff" />
+                        <ellipse cx="391.4" cy="327.34" rx="9.79" ry="5.91" style="fill: #fff" />
+                        <ellipse cx="381.61" cy="329.24" rx="9.79" ry="5.91" style="fill: #fff" />
+                        <ellipse cx="456.55" cy="326.35" rx="6.49" ry="3.02" style="fill: #fff" />
+                    </g>
+                    <g id="neige-6" data-name="neige">
+                        <circle cx="360.68" cy="223.62" r="1.72" style="fill: #fefefe" />
+                        <ellipse cx="364.09" cy="222.84" rx="1.69" ry="0.94" style="fill: #fefefe" />
+                        <ellipse cx="367.36" cy="222.84" rx="1.59" ry="0.94" style="fill: #fefefe" />
+                        <ellipse cx="370.83" cy="222.84" rx="1.88" ry="0.94" style="fill: #fefefe" />
+                        <circle cx="357.95" cy="223.21" r="1.31" style="fill: #fefefe" />
+                        <circle cx="354.67" cy="223.32" r="2.43" style="fill: #fefefe" />
+                        <ellipse cx="350.82" cy="223.39" rx="3.01" ry="1.4" style="fill: #fefefe" />
+                        <circle cx="347.49" cy="223.34" r="2" style="fill: #fefefe" />
+                        <circle cx="362.69" cy="221.13" r="1.93" style="fill: #fefefe" />
+                        <ellipse cx="358.27" cy="219.82" rx="3.61" ry="1.78" style="fill: #fefefe" />
+                        <ellipse cx="356.4" cy="220.65" rx="2.81" ry="0.87" style="fill: #fefefe" />
+                        <circle cx="358.22" cy="221.36" r="1.58" style="fill: #fefefe" />
+                        <circle cx="360.77" cy="220.63" r="1.81" style="fill: #fefefe" />
+                        <ellipse cx="364.62" cy="221.6" rx="2.74" ry="1.34" style="fill: #fefefe" />
+                        <ellipse cx="353.59" cy="221.31" rx="3.51" ry="1.53" style="fill: #fefefe" />
+                        <circle cx="362.46" cy="223.17" r="1.17" style="fill: #fefefe" />
+                        <ellipse cx="365.39" cy="222.44" rx="0.9" ry="1.1" style="fill: #fefefe" />
+                        <circle cx="368.42" cy="222.93" r="1.41" style="fill: #fefefe" />
+                    </g>
+                    <g id="neige-7" data-name="neige">
+                        <ellipse cx="381.81" cy="249.47" rx="5.33" ry="3.09" style="fill: #fefefe" />
+                        <circle cx="377.86" cy="247.64" r="3.54" style="fill: #fefefe" />
+                        <ellipse cx="376.61" cy="249.22" rx="4.79" ry="1.96" style="fill: #fefefe" />
+                        <ellipse cx="369.8" cy="247.27" rx="5.3" ry="3.17" style="fill: #fefefe" />
+                        <ellipse cx="363.64" cy="249.93" rx="4.37" ry="2.1" style="fill: #fefefe" />
+                        <ellipse cx="355.92" cy="250.43" rx="5.96" ry="4.33" style="fill: #fefefe" />
+                        <ellipse cx="343.88" cy="248.64" rx="3.49" ry="2.54" style="fill: #fefefe" />
+                        <circle cx="347.81" cy="247.83" r="4.19" style="fill: #fefefe" />
+                        <circle cx="340.38" cy="249.33" r="3.23" style="fill: #fefefe" />
+                        <ellipse cx="335.12" cy="248.64" rx="3.91" ry="2.54" style="fill: #fefefe" />
+                    </g>
+                    <g id="neige-8" data-name="neige">
+                        <ellipse cx="684.13" cy="248.91" rx="5.33" ry="3.09" style="fill: #fefefe" />
+                        <circle cx="688.08" cy="247.08" r="3.54" style="fill: #fefefe" />
+                        <ellipse cx="689.33" cy="248.67" rx="4.79" ry="1.96" style="fill: #fefefe" />
+                        <ellipse cx="696.15" cy="246.71" rx="5.3" ry="3.17" style="fill: #fefefe" />
+                        <ellipse cx="702.31" cy="249.37" rx="4.37" ry="2.1" style="fill: #fefefe" />
+                        <ellipse cx="710.02" cy="249.87" rx="5.96" ry="4.33" style="fill: #fefefe" />
+                        <ellipse cx="722.07" cy="248.08" rx="3.49" ry="2.54" style="fill: #fefefe" />
+                        <circle cx="718.14" cy="247.27" r="4.19" style="fill: #fefefe" />
+                        <circle cx="725.56" cy="248.77" r="3.23" style="fill: #fefefe" />
+                        <ellipse cx="730.83" cy="248.08" rx="3.91" ry="2.54" style="fill: #fefefe" />
+                    </g>
+                    <g id="flocons" style="opacity: 0.5">
+                        <circle cx="209.02" cy="432.25" r="3.22" style="fill: #fff" />
+                        <circle cx="182.17" cy="405.4" r="3.22" style="fill: #fff" />
+                        <circle cx="155.31" cy="432.25" r="3.22" style="fill: #fff" />
+                        <circle cx="235.87" cy="378.55" r="3.22" style="fill: #fff" />
+                        <circle cx="155.31" cy="378.55" r="3.22" style="fill: #d8d8d8" />
+                        <circle cx="182.17" cy="459.92" r="3.22" style="fill: #FFFFFF" />
+                        <circle cx="209.02" cy="378.55" r="3.22" style="fill: #FFFFFF" />
+                        <circle cx="235.87" cy="405.4" r="3.22" style="fill: #d8d8d8" />
+                        <circle cx="235.87" cy="459.1" r="3.22" style="fill: #fff" />
+                        <circle cx="209.02" cy="566.51" r="3.22" style="fill: #fff" />
+                        <circle cx="182.17" cy="539.66" r="3.22" style="fill: #fff" />
+                        <circle cx="155.31" cy="566.51" r="3.22" style="fill: #fff" />
+                        <circle cx="235.87" cy="512.8" r="3.22" style="fill: #fff" />
+                        <circle cx="155.31" cy="512.8" r="3.22" style="fill: #d8d8d8" />
+                        <circle cx="182.17" cy="594.18" r="3.22" style="fill: #FFFFFF" />
+                        <circle cx="209.02" cy="512.8" r="3.22" style="fill: #FFFFFF" />
+                        <circle cx="235.87" cy="539.66" r="3.22" style="fill: #d8d8d8" />
+                        <circle cx="235.87" cy="593.36" r="3.22" style="fill: #fff" />
+                        <circle cx="208.88" cy="298.21" r="3.22" style="fill: #fff" />
+                        <circle cx="182.03" cy="271.36" r="3.22" style="fill: #fff" />
+                        <circle cx="155.18" cy="298.21" r="3.22" style="fill: #fff" />
+                        <circle cx="235.73" cy="244.5" r="3.22" style="fill: #fff" />
+                        <circle cx="155.18" cy="244.5" r="3.22" style="fill: #d8d8d8" />
+                        <circle cx="182.03" cy="325.88" r="3.22" style="fill: #FFFFFF" />
+                        <circle cx="208.88" cy="244.5" r="3.22" style="fill: #FFFFFF" />
+                        <circle cx="235.73" cy="271.36" r="3.22" style="fill: #d8d8d8" />
+                        <circle cx="235.73" cy="325.06" r="3.22" style="fill: #fff" />
+                        <circle cx="209.02" cy="164.17" r="3.22" style="fill: #fff" />
+                        <circle cx="182.17" cy="137.32" r="3.22" style="fill: #fff" />
+                        <circle cx="155.31" cy="164.17" r="3.22" style="fill: #fff" />
+                        <circle cx="235.87" cy="110.46" r="3.22" style="fill: #fff" />
+                        <circle cx="155.31" cy="110.46" r="3.22" style="fill: #d8d8d8" />
+                        <circle cx="182.17" cy="191.84" r="3.22" style="fill: #FFFFFF" />
+                        <circle cx="209.02" cy="110.46" r="3.22" style="fill: #FFFFFF" />
+                        <circle cx="235.87" cy="137.32" r="3.22" style="fill: #d8d8d8" />
+                        <circle cx="235.87" cy="191.02" r="3.22" style="fill: #fff" />
+                        <circle cx="343.28" cy="432.03" r="3.22" style="fill: #fff" />
+                        <circle cx="316.42" cy="405.18" r="3.22" style="fill: #fff" />
+                        <circle cx="289.57" cy="432.03" r="3.22" style="fill: #fff" />
+                        <circle cx="370.13" cy="378.33" r="3.22" style="fill: #fff" />
+                        <circle cx="289.57" cy="378.33" r="3.22" style="fill: #d8d8d8" />
+                        <circle cx="316.42" cy="459.7" r="3.22" style="fill: #FFFFFF" />
+                        <circle cx="343.28" cy="378.33" r="3.22" style="fill: #FFFFFF" />
+                        <circle cx="370.13" cy="405.18" r="3.22" style="fill: #d8d8d8" />
+                        <circle cx="370.13" cy="458.88" r="3.22" style="fill: #fff" />
+                        <circle cx="343.28" cy="566.29" r="3.22" style="fill: #fff" />
+                        <circle cx="316.42" cy="539.44" r="3.22" style="fill: #fff" />
+                        <circle cx="289.57" cy="566.29" r="3.22" style="fill: #fff" />
+                        <circle cx="370.13" cy="512.59" r="3.22" style="fill: #fff" />
+                        <circle cx="289.57" cy="512.59" r="3.22" style="fill: #d8d8d8" />
+                        <circle cx="316.42" cy="593.96" r="3.22" style="fill: #FFFFFF" />
+                        <circle cx="343.28" cy="512.59" r="3.22" style="fill: #FFFFFF" />
+                        <circle cx="370.13" cy="539.44" r="3.22" style="fill: #d8d8d8" />
+                        <circle cx="370.13" cy="593.14" r="3.22" style="fill: #fff" />
+                        <circle cx="343.14" cy="297.99" r="3.22" style="fill: #fff" />
+                        <circle cx="316.29" cy="271.14" r="3.22" style="fill: #fff" />
+                        <circle cx="289.44" cy="297.99" r="3.22" style="fill: #fff" />
+                        <circle cx="369.99" cy="244.29" r="3.22" style="fill: #fff" />
+                        <circle cx="289.44" cy="244.29" r="3.22" style="fill: #d8d8d8" />
+                        <circle cx="316.29" cy="325.66" r="3.22" style="fill: #FFFFFF" />
+                        <circle cx="343.14" cy="244.29" r="3.22" style="fill: #FFFFFF" />
+                        <circle cx="369.99" cy="271.14" r="3.22" style="fill: #d8d8d8" />
+                        <circle cx="369.99" cy="324.84" r="3.22" style="fill: #fff" />
+                        <circle cx="343.28" cy="163.95" r="3.22" style="fill: #fff" />
+                        <circle cx="316.42" cy="137.1" r="3.22" style="fill: #fff" />
+                        <circle cx="289.57" cy="163.95" r="3.22" style="fill: #fff" />
+                        <circle cx="370.13" cy="110.25" r="3.22" style="fill: #fff" />
+                        <circle cx="289.57" cy="110.25" r="3.22" style="fill: #d8d8d8" />
+                        <circle cx="316.42" cy="191.62" r="3.22" style="fill: #FFFFFF" />
+                        <circle cx="343.28" cy="110.25" r="3.22" style="fill: #FFFFFF" />
+                        <circle cx="370.13" cy="137.1" r="3.22" style="fill: #d8d8d8" />
+                        <circle cx="370.13" cy="190.8" r="3.22" style="fill: #fff" />
+                        <circle cx="477.67" cy="431.81" r="3.22" style="fill: #fff" />
+                        <circle cx="450.82" cy="404.96" r="3.22" style="fill: #fff" />
+                        <circle cx="423.97" cy="431.81" r="3.22" style="fill: #fff" />
+                        <circle cx="504.52" cy="378.11" r="3.22" style="fill: #fff" />
+                        <circle cx="423.97" cy="378.11" r="3.22" style="fill: #d8d8d8" />
+                        <circle cx="450.82" cy="459.48" r="3.22" style="fill: #FFFFFF" />
+                        <circle cx="477.67" cy="378.11" r="3.22" style="fill: #FFFFFF" />
+                        <circle cx="504.52" cy="404.96" r="3.22" style="fill: #d8d8d8" />
+                        <circle cx="504.52" cy="458.66" r="3.22" style="fill: #fff" />
+                        <circle cx="477.67" cy="566.07" r="3.22" style="fill: #fff" />
+                        <circle cx="450.82" cy="539.22" r="3.22" style="fill: #fff" />
+                        <circle cx="423.97" cy="566.07" r="3.22" style="fill: #fff" />
+                        <circle cx="504.52" cy="512.37" r="3.22" style="fill: #fff" />
+                        <circle cx="423.97" cy="512.37" r="3.22" style="fill: #d8d8d8" />
+                        <circle cx="450.82" cy="593.74" r="3.22" style="fill: #FFFFFF" />
+                        <circle cx="477.67" cy="512.37" r="3.22" style="fill: #FFFFFF" />
+                        <circle cx="504.52" cy="539.22" r="3.22" style="fill: #d8d8d8" />
+                        <circle cx="504.52" cy="592.92" r="3.22" style="fill: #fff" />
+                        <circle cx="477.53" cy="297.77" r="3.22" style="fill: #fff" />
+                        <circle cx="450.68" cy="270.92" r="3.22" style="fill: #fff" />
+                        <circle cx="423.83" cy="297.77" r="3.22" style="fill: #fff" />
+                        <circle cx="504.39" cy="244.07" r="3.22" style="fill: #fff" />
+                        <circle cx="423.83" cy="244.07" r="3.22" style="fill: #d8d8d8" />
+                        <circle cx="450.68" cy="325.44" r="3.22" style="fill: #FFFFFF" />
+                        <circle cx="477.53" cy="244.07" r="3.22" style="fill: #FFFFFF" />
+                        <circle cx="504.39" cy="270.92" r="3.22" style="fill: #d8d8d8" />
+                        <circle cx="504.39" cy="324.62" r="3.22" style="fill: #fff" />
+                        <circle cx="477.67" cy="163.73" r="3.22" style="fill: #fff" />
+                        <circle cx="450.82" cy="136.88" r="3.22" style="fill: #fff" />
+                        <circle cx="423.97" cy="163.73" r="3.22" style="fill: #fff" />
+                        <circle cx="504.52" cy="110.03" r="3.22" style="fill: #fff" />
+                        <circle cx="423.97" cy="110.03" r="3.22" style="fill: #d8d8d8" />
+                        <circle cx="450.82" cy="191.4" r="3.22" style="fill: #FFFFFF" />
+                        <circle cx="477.67" cy="110.03" r="3.22" style="fill: #FFFFFF" />
+                        <circle cx="504.52" cy="136.88" r="3.22" style="fill: #d8d8d8" />
+                        <circle cx="504.52" cy="190.58" r="3.22" style="fill: #fff" />
+                        <circle cx="612.33" cy="431.59" r="3.22" style="fill: #fff" />
+                        <circle cx="585.48" cy="404.74" r="3.22" style="fill: #fff" />
+                        <circle cx="558.63" cy="431.59" r="3.22" style="fill: #fff" />
+                        <circle cx="639.18" cy="377.89" r="3.22" style="fill: #fff" />
+                        <circle cx="558.63" cy="377.89" r="3.22" style="fill: #d8d8d8" />
+                        <circle cx="585.48" cy="459.26" r="3.22" style="fill: #FFFFFF" />
+                        <circle cx="612.33" cy="377.89" r="3.22" style="fill: #FFFFFF" />
+                        <circle cx="639.18" cy="404.74" r="3.22" style="fill: #d8d8d8" />
+                        <circle cx="639.18" cy="458.45" r="3.22" style="fill: #fff" />
+                        <circle cx="612.33" cy="565.85" r="3.22" style="fill: #fff" />
+                        <circle cx="585.48" cy="539" r="3.22" style="fill: #fff" />
+                        <circle cx="558.63" cy="565.85" r="3.22" style="fill: #fff" />
+                        <circle cx="639.18" cy="512.15" r="3.22" style="fill: #fff" />
+                        <circle cx="558.63" cy="512.15" r="3.22" style="fill: #d8d8d8" />
+                        <circle cx="585.48" cy="593.52" r="3.22" style="fill: #FFFFFF" />
+                        <circle cx="612.33" cy="512.15" r="3.22" style="fill: #FFFFFF" />
+                        <circle cx="639.18" cy="539" r="3.22" style="fill: #d8d8d8" />
+                        <circle cx="639.18" cy="592.7" r="3.22" style="fill: #fff" />
+                        <circle cx="612.2" cy="297.55" r="3.22" style="fill: #fff" />
+                        <circle cx="585.35" cy="270.7" r="3.22" style="fill: #fff" />
+                        <circle cx="558.49" cy="297.55" r="3.22" style="fill: #fff" />
+                        <circle cx="639.05" cy="243.85" r="3.22" style="fill: #fff" />
+                        <circle cx="558.49" cy="243.85" r="3.22" style="fill: #d8d8d8" />
+                        <circle cx="585.35" cy="325.22" r="3.22" style="fill: #FFFFFF" />
+                        <circle cx="612.2" cy="243.85" r="3.22" style="fill: #FFFFFF" />
+                        <circle cx="639.05" cy="270.7" r="3.22" style="fill: #d8d8d8" />
+                        <circle cx="639.05" cy="324.4" r="3.22" style="fill: #fff" />
+                        <circle cx="612.33" cy="163.51" r="3.22" style="fill: #fff" />
+                        <circle cx="585.48" cy="136.66" r="3.22" style="fill: #fff" />
+                        <circle cx="558.63" cy="163.51" r="3.22" style="fill: #fff" />
+                        <circle cx="639.18" cy="109.81" r="3.22" style="fill: #fff" />
+                        <circle cx="558.63" cy="109.81" r="3.22" style="fill: #d8d8d8" />
+                        <circle cx="585.48" cy="191.18" r="3.22" style="fill: #FFFFFF" />
+                        <circle cx="612.33" cy="109.81" r="3.22" style="fill: #FFFFFF" />
+                        <circle cx="639.18" cy="136.66" r="3.22" style="fill: #d8d8d8" />
+                        <circle cx="639.18" cy="190.36" r="3.22" style="fill: #fff" />
+                        <circle cx="747.13" cy="431.38" r="3.22" style="fill: #fff" />
+                        <circle cx="720.28" cy="404.52" r="3.22" style="fill: #fff" />
+                        <circle cx="693.43" cy="431.38" r="3.22" style="fill: #fff" />
+                        <circle cx="773.98" cy="377.67" r="3.22" style="fill: #fff" />
+                        <circle cx="693.43" cy="377.67" r="3.22" style="fill: #d8d8d8" />
+                        <circle cx="720.28" cy="459.05" r="3.22" style="fill: #FFFFFF" />
+                        <circle cx="747.13" cy="377.67" r="3.22" style="fill: #FFFFFF" />
+                        <circle cx="773.98" cy="404.52" r="3.22" style="fill: #d8d8d8" />
+                        <circle cx="773.98" cy="458.23" r="3.22" style="fill: #fff" />
+                        <circle cx="747.13" cy="565.63" r="3.22" style="fill: #fff" />
+                        <circle cx="720.28" cy="538.78" r="3.22" style="fill: #fff" />
+                        <circle cx="693.43" cy="565.63" r="3.22" style="fill: #fff" />
+                        <circle cx="773.98" cy="511.93" r="3.22" style="fill: #fff" />
+                        <circle cx="693.43" cy="511.93" r="3.22" style="fill: #d8d8d8" />
+                        <circle cx="720.28" cy="593.3" r="3.22" style="fill: #FFFFFF" />
+                        <circle cx="747.13" cy="511.93" r="3.22" style="fill: #FFFFFF" />
+                        <circle cx="773.98" cy="538.78" r="3.22" style="fill: #d8d8d8" />
+                        <circle cx="773.98" cy="592.49" r="3.22" style="fill: #fff" />
+                        <circle cx="747" cy="297.33" r="3.22" style="fill: #fff" />
+                        <circle cx="720.14" cy="270.48" r="3.22" style="fill: #fff" />
+                        <circle cx="693.29" cy="297.33" r="3.22" style="fill: #fff" />
+                        <circle cx="773.85" cy="243.63" r="3.22" style="fill: #fff" />
+                        <circle cx="693.29" cy="243.63" r="3.22" style="fill: #d8d8d8" />
+                        <circle cx="720.14" cy="325" r="3.22" style="fill: #FFFFFF" />
+                        <circle cx="747" cy="243.63" r="3.22" style="fill: #FFFFFF" />
+                        <circle cx="773.85" cy="270.48" r="3.22" style="fill: #d8d8d8" />
+                        <circle cx="773.85" cy="324.19" r="3.22" style="fill: #fff" />
+                        <circle cx="747.13" cy="163.29" r="3.22" style="fill: #fff" />
+                        <circle cx="720.28" cy="136.44" r="3.22" style="fill: #fff" />
+                        <circle cx="693.43" cy="163.29" r="3.22" style="fill: #fff" />
+                        <circle cx="773.98" cy="109.59" r="3.22" style="fill: #fff" />
+                        <circle cx="693.43" cy="109.59" r="3.22" style="fill: #d8d8d8" />
+                        <circle cx="720.28" cy="190.96" r="3.22" style="fill: #FFFFFF" />
+                        <circle cx="747.13" cy="109.59" r="3.22" style="fill: #FFFFFF" />
+                        <circle cx="773.98" cy="136.44" r="3.22" style="fill: #d8d8d8" />
+                        <circle cx="773.98" cy="190.15" r="3.22" style="fill: #fff" />
+                    </g>
+
+                    <polyline id="reflet" points="567.66 594.07 716.64 594.07 716.64 123.43 688.5 123.43" style="fill: #fff;opacity: 0.30000000000000004" />
+                    <polyline id="reflet-2" data-name="reflet" points="291.8 594.87 440.78 594.87 440.78 124.23 412.65 124.23" style="fill: #fff;opacity: 0.30000000000000004" />
+                    <rect x="438.28" y="121.85" width="33.18" height="473.25" style="fill: #cecece" />
+                    <rect x="453.77" y="111.62" width="17.69" height="483.47" style="fill: #bfbfbf" />
+                    <g>
+                        <path d="M727.47,112.2a2,2,0,0,1,.58,1.42V594.26" transform="translate(0.03 0.16)" style="fill: none;stroke: #bfbfbf;stroke-miterlimit: 10;stroke-width: 23px" />
+                        <path d="M181.63,594.26V113.62a2,2,0,0,1,2-2H726.05a2,2,0,0,1,1.42.58" transform="translate(0.03 0.16)" style="fill: none;stroke: #cecece;stroke-miterlimit: 10;stroke-width: 23px" />
+                    </g>
+                    <g>
+                        <g style="opacity: 0.30000000000000004">
+                            <rect x="721.64" y="147.44" width="5.98" height="218.91" style="fill: #83838e" />
+                            <rect x="719.12" y="362.3" width="11.04" height="20.28" rx="3.06" ry="3.06" style="fill: #83838e" />
+                        </g>
+                        <rect x="716.12" y="106.31" width="5.98" height="260.5" style="fill: #f4f4f4" />
+                        <rect x="716.12" y="106.31" width="5.98" height="52.6" style="fill: #e2e2e2" />
+                        <polygon points="729.22 116.94 174.23 116.94 178.29 106.31 733.31 106.31 729.22 116.94" style="fill: #f4f4f4" />
+                        <polygon points="729.22 140.82 174.23 140.82 178.29 130.18 733.31 130.18 729.22 140.82" style="fill: #f4f4f4" />
+                        <polygon points="729.22 152.76 174.23 152.76 178.29 142.12 733.31 142.12 729.22 152.76" style="fill: #f4f4f4" />
+                        <rect x="713.6" y="361.99" width="11.04" height="24.14" rx="3.34" ry="3.34" style="fill: #f4f4f4" />
+                        <polygon points="729.22 128.88 174.23 128.88 178.29 118.24 733.31 118.24 729.22 128.88" style="fill: #f4f4f4" />
+                        <polygon points="731.92 121.85 176.92 121.85 178.29 118.24 733.31 118.24 731.92 121.85" style="fill: #e2e2e2" />
+                        <polygon points="731.68 133.78 176.68 133.78 178.05 130.18 733.07 130.18 731.68 133.78" style="fill: #e2e2e2" />
+                        <polygon points="731.68 145.72 176.68 145.72 178.05 142.12 733.07 142.12 731.68 145.72" style="fill: #e2e2e2" />
+                    </g>
+                </g>
+                <g id="mur">
+                    <polygon points="0 0 0 594.93 169.68 594.93 169.68 99.89 739.16 99.89 739.16 594.93 910.46 594.93 910.46 0 0 0" style="fill: #fefefe" />
+                    <g id="Cadres">
+                        <rect x="91.5" y="150.99" width="64.77" height="85.24" rx="3" ry="3" style="fill: #d3d3d3" />
+                        <rect x="17.87" y="151.35" width="64.77" height="85.24" rx="3" ry="3" style="fill: #d3d3d3" />
+                        <g>
+                            <rect x="17.52" y="150.68" width="61.77" height="82.24" rx="1.5" ry="1.5" style="fill: #fff" />
+                            <path d="M77.76,152v79.24H19V152H77.76m0-3H19a3,3,0,0,0-3,3v79.24a3,3,0,0,0,3,3H77.76a3,3,0,0,0,3-3V152a3,3,0,0,0-3-3Z" transform="translate(0.03 0.16)" style="fill: #83afdb" />
+                        </g>
+                        <g>
+                            <rect x="90.84" y="150.68" width="61.77" height="82.24" rx="1.5" ry="1.5" style="fill: #fff" />
+                            <path d="M151.08,152v79.24H92.31V152h58.77m0-3H92.31a3,3,0,0,0-3,3v79.24a3,3,0,0,0,3,3h58.77a3,3,0,0,0,3-3V152a3,3,0,0,0-3-3Z" transform="translate(0.03 0.16)" style="fill: #83afdb" />
+                        </g>
+                        <circle cx="63.93" cy="219.26" r="5.71" style="fill: #fc846c;stroke: #f75f46;stroke-miterlimit: 10" />
+                        <circle cx="136.29" cy="219.26" r="5.71" style="fill: #adccf2;stroke: #83afdb;stroke-miterlimit: 10" />
+                        <rect x="26.42" y="162.93" width="22.59" height="1.33" style="fill: #a8a8a8" />
+                        <rect x="26.42" y="165.32" width="22.59" height="1.33" style="fill: #a8a8a8" />
+                        <rect x="26.42" y="167.72" width="22.59" height="1.33" style="fill: #a8a8a8" />
+                        <rect x="26.42" y="170.12" width="22.59" height="1.33" style="fill: #a8a8a8" />
+                        <rect x="99.47" y="163.46" width="22.59" height="1.33" style="fill: #a8a8a8" />
+                        <rect x="99.47" y="165.86" width="22.59" height="1.33" style="fill: #a8a8a8" />
+                        <rect x="99.47" y="168.25" width="22.59" height="1.33" style="fill: #a8a8a8" />
+                        <rect x="99.47" y="170.65" width="22.59" height="1.33" style="fill: #a8a8a8" />
+                        <rect x="26.49" y="179.98" width="44.5" height="1.77" style="fill: #a8a8a8" />
+                        <rect x="26.49" y="183.39" width="44.5" height="1.77" style="fill: #a8a8a8" />
+                        <rect x="26.49" y="186.8" width="44.5" height="1.77" style="fill: #a8a8a8" />
+                        <rect x="26.49" y="190.21" width="44.5" height="1.77" style="fill: #a8a8a8" />
+                        <rect x="26.49" y="193.61" width="44.5" height="1.77" style="fill: #a8a8a8" />
+                        <rect x="26.49" y="197.02" width="44.5" height="1.77" style="fill: #a8a8a8" />
+                        <rect x="26.49" y="200.43" width="44.5" height="1.77" style="fill: #a8a8a8" />
+                        <rect x="26.49" y="203.84" width="44.5" height="1.77" style="fill: #a8a8a8" />
+                        <rect x="26.49" y="207.25" width="44.5" height="1.77" style="fill: #a8a8a8" />
+                        <rect x="99.47" y="179.98" width="44.5" height="1.77" style="fill: #a8a8a8" />
+                        <rect x="99.47" y="183.39" width="44.5" height="1.77" style="fill: #a8a8a8" />
+                        <rect x="99.47" y="186.8" width="44.5" height="1.77" style="fill: #a8a8a8" />
+                        <rect x="99.47" y="190.21" width="44.5" height="1.77" style="fill: #a8a8a8" />
+                        <rect x="99.47" y="193.61" width="44.5" height="1.77" style="fill: #a8a8a8" />
+                        <rect x="99.47" y="197.02" width="44.5" height="1.77" style="fill: #a8a8a8" />
+                        <rect x="99.47" y="200.43" width="44.5" height="1.77" style="fill: #a8a8a8" />
+                        <rect x="99.47" y="203.84" width="44.5" height="1.77" style="fill: #a8a8a8" />
+                        <rect x="99.47" y="207.25" width="44.5" height="1.77" style="fill: #a8a8a8" />
+                    </g>
+                </g>
+                <g id="sol">
+                    <g id="Sol-2" data-name="Sol">
+                        <rect id="Sol-3" data-name="Sol" x="1.81" y="594.07" width="909.77" height="174.09" style="fill: #e8e8e8" />
+                        <polygon points="326.19 649.23 370.88 594.07 9.79 594.07 17 649.23 326.19 649.23" style="fill: #d3d3d3" />
+                    </g>
+                </g>
+                <g id="plante">
+                    <g id="Plante-2" data-name="Plante">
+                        <polyline points="785.84 617.37 796.28 594.27 743.35 593.97 734.31 617.37 785.84 617.37" style="fill: #d3d3d3" />
+                        <path d="M742.65,571.23H777.5a3,3,0,0,1,3,3v37.84a0,0,0,0,1,0,0H739.65a0,0,0,0,1,0,0V574.23A3,3,0,0,1,742.65,571.23Z" style="fill: #d32f2f" />
+                        <path d="M742.14,571.23h30.17a0,0,0,0,1,0,0v35.19a0,0,0,0,1,0,0H739.65a0,0,0,0,1,0,0v-32.7A2.49,2.49,0,0,1,742.14,571.23Z" style="fill: #e85656" />
+                        <rect x="741.94" y="572.98" width="6.57" height="30.21" rx="3.28" ry="3.28" style="fill: #ff6161" />
+                        <rect x="734.31" y="612.08" width="51.53" height="5.3" rx="2.65" ry="2.65" style="fill: #484848" />
+                        <rect x="756.83" y="558.9" width="6.5" height="12.33" style="fill: #9e8574" />
+                        <g id="boulePlante">
+                            <circle cx="760.08" cy="503.33" r="56.93" style="fill: #00c29c" />
+                            <path d="M789.24,454.28a56.94,56.94,0,0,1-72,86.45,56.93,56.93,0,1,0,72-86.45Z" transform="translate(0.03 0.16)" style="fill: #00987a" />
+                            <circle cx="732.15" cy="488.51" r="18.55" style="fill: #00dbb1" />
+                        </g>
+                    </g>
+                </g>
+                <g id="characterLayer">
+                    <g id="perso">
+                        <g id="chair">
+                            <g>
+                                <rect x="183.89" y="531.89" width="23.37" height="63.68" rx="11.68" ry="11.68" style="fill: #3a3a3a" />
+                                <polygon points="199.98 611.82 191.27 611.82 191.22 590.11 199.93 590.11 199.98 611.82" style="fill: #3a3a3a" />
+                                <rect x="142.66" y="522.79" width="105.83" height="29.5" rx="14.75" ry="14.75" style="fill: #512e41" />
+                                <rect x="148.36" y="611.81" width="94.53" height="12.84" rx="6.42" ry="6.42" style="fill: #7f7f7f" />
+                                <rect x="171.11" y="611.81" width="49.03" height="12.84" rx="6.42" ry="6.42" style="fill: #3a3a3a" />
+                                <g>
+                                    <g>
+                                        <circle cx="154.53" cy="629.05" r="7.71" style="fill: #3a3a3a" />
+                                        <circle cx="176.01" cy="629.05" r="7.71" style="fill: #3a3a3a" />
+                                    </g>
+                                    <g>
+                                        <circle cx="215.24" cy="629.05" r="7.71" style="fill: #3a3a3a" />
+                                        <circle cx="236.72" cy="629.05" r="7.71" style="fill: #3a3a3a" />
+                                    </g>
+                                </g>
+                            </g>
+                            <rect x="137.63" y="498.33" width="3.73" height="39.03" rx="1.68" ry="1.68" style="fill: #8f9293" />
+                            <rect x="137.63" y="533.89" width="8.86" height="3.64" rx="1.82" ry="1.82" style="fill: #8f9293" />
+                            <rect x="249.77" y="499.04" width="3.73" height="39.03" rx="1.68" ry="1.68" transform="translate(503.3 1037.27) rotate(180)" style="fill: #8f9293" />
+                            <rect x="244.64" y="534.42" width="8.86" height="3.64" rx="1.82" ry="1.82" transform="translate(498.17 1072.65) rotate(180)" style="fill: #8f9293" />
+                            <g>
+                                <rect x="130.05" y="471.25" width="18.89" height="30.78" rx="6.47" ry="6.47" style="fill: #3a3a3a" />
+                                <rect x="242.22" y="471.25" width="18.89" height="30.78" rx="6.47" ry="6.47" style="fill: #3a3a3a" />
+                            </g>
+                            <rect x="147.67" y="395.45" width="95.73" height="140.96" rx="19.1" ry="19.1" style="fill: #512e41" />
+                        </g>
+                        <g id="headCharacter">
+                            <g>
+                                <g id="hear">
+                                    <circle id="outHearRight" cx="227.51" cy="323.48" r="9.41" style="fill: #e8b49a" />
+                                    <circle id="inHearRight" cx="227.51" cy="323.48" r="5.16" style="fill: #e18f80" />
+                                </g>
+                                <g id="hear-2" data-name="hear">
+                                    <circle id="outHearLeft" cx="164.56" cy="323.48" r="9.41" style="fill: #ecc09e" />
+                                    <circle id="inHearLeft" cx="164.56" cy="323.48" r="5.16" style="fill: #e18f80" />
+                                    <path id="lightHear" d="M164,316.3a6.57,6.57,0,0,0-6.57,6.57" transform="translate(0.03 0.16)" style="fill: none;stroke: #f6d9bf;stroke-linecap: round;stroke-miterlimit: 10;stroke-width: 1.807874321937561px" />
+                                </g>
+                            </g>
+                            <ellipse id="backHair" cx="196.05" cy="301.22" rx="37.42" ry="38.37" style="fill: #002438" />
+                            <rect x="162.61" y="271.3" width="66.88" height="105.51" rx="32.04" ry="32.04" style="fill: #ecc09e" />
+                            <rect x="162.16" y="293.14" width="2.99" height="30.49" rx="1.3" ry="1.3" style="fill: #002438" />
+                            <rect id="shadowHead" x="221.78" y="293.22" width="7.71" height="73.89" style="fill: #e8b49a" />
+                            <rect x="227.2" y="293.22" width="2.99" height="30.23" rx="1.29" ry="1.29" style="fill: #002438" />
+                            <g class="hear">
+                                <g id="outHearRight">
+                                    <path d="M158.84,310.71h2.94a1.45,1.45,0,0,1,1.45,1.45v23.08a1.45,1.45,0,0,1-1.45,1.45h-2.94a0,0,0,0,1,0,0v-26A0,0,0,0,1,158.84,310.71Z" style="fill: #00987a" />
+                                    <path d="M158.81,310.55a13,13,0,1,0,0,26Z" transform="translate(0.03 0.16)" style="fill: #00c29c" />
+                                </g>
+                                <g id="outHearLeft">
+                                    <path d="M233.82,310.55v26a13,13,0,0,0,0-26Z" transform="translate(0.03 0.16)" style="fill: #00c29c" />
+                                    <path d="M229.5,310.55h2.94A1.45,1.45,0,0,1,233.9,312v23.08a1.45,1.45,0,0,1-1.45,1.45H229.5a0,0,0,0,1,0,0v-26a0,0,0,0,1,0,0Z" transform="translate(463.43 647.24) rotate(-180)" style="fill: #00987a" />
+                                </g>
+                            </g>
+                            <path d="M227.17,283.3h-62v19.76a15.54,15.54,0,0,0,18.61-3.28,17.45,17.45,0,0,0,23.72.74,16.41,16.41,0,0,0,11.72,5,16.23,16.23,0,0,0,8-2.1Z" transform="translate(0.03 0.16)" style="fill: #dd9581" />
+                            <ellipse class="frontHair" cx="207.99" cy="277.04" rx="17" ry="17.43" style="fill: #002438" />
+                            <ellipse class="frontHair" data-name="frontHair" cx="183.98" cy="275.88" rx="17" ry="17.43" style="fill: #002438" />
+                            <path class="tienCache" d="M235.54,310.55V303a39.51,39.51,0,0,0-79,0v7.56" transform="translate(0.03 0.16)" style="fill: none;stroke: #00c29c;stroke-linecap: round;stroke-miterlimit: 10;stroke-width: 7px" />
+                            <ellipse class="frontHair" data-name="frontHair" cx="195.95" cy="284.07" rx="17" ry="17.43" style="fill: #002438" />
+                            <ellipse class="frontHair" data-name="frontHair" cx="217.99" cy="285.83" rx="15.88" ry="16.29" style="fill: #002438" />
+                            <ellipse class="frontHair" data-name="frontHair" cx="173.4" cy="285.94" rx="15.17" ry="15.55" style="fill: #002438" />
+                            <ellipse class="frontHair" cx="173.4" cy="285.94" rx="7.16" ry="7.34" style="fill: #2d4f5d" />
+                            <g id="nez">
+                                <path d="M195.5,337.12h0a5.83,5.83,0,0,1-5.81-5.81v1.51a5.83,5.83,0,0,0,5.81,5.81h0a5.83,5.83,0,0,0,5.82-5.81v-1.51A5.84,5.84,0,0,1,195.5,337.12Z" transform="translate(0.03 0.16)" style="fill: #e18f80" />
+                                <rect x="189.19" y="323.24" width="8.46" height="4.17" rx="2.09" ry="2.09" transform="translate(518.78 132.07) rotate(90)" style="fill: #f6d9bf" />
+                            </g>
+                            <g class="eyesMove">
+                                <circle cx="178.43" cy="316.07" r="4.86" style="fill: #fff" />
+                                <circle cx="212.64" cy="316.07" r="4.86" style="fill: #fff" />
+                                <g id="eyeCache">
+                                    <path d="M183.64,313.84a6,6,0,0,0-10.51,0Z" transform="translate(0.03 0.16)" style="fill: #e8b49a" />
+                                    <path d="M217.88,313.84a6,6,0,0,0-10.5,0Z" transform="translate(0.03 0.16)" style="fill: #e8b49a" />
+                                </g>
+                                <g id="eyesMoveBlack">
+                                    <circle cx="177.17" cy="318.07" r="1.55" style="fill: #002438" />
+                                    <circle cx="210.9" cy="318.07" r="1.55" style="fill: #002438" />
+                                </g>
+                                <g id="paupiere">
+                                    <path id="paupLeft" d="M173.16,307h10.5a0,0,0,0,1,0,0v1.68a5.25,5.25,0,0,1-5.25,5.25h0a5.25,5.25,0,0,1-5.25-5.25V307A0,0,0,0,1,173.16,307Z" style="fill: #e8b49a" />
+                                    <path id="paupRight" d="M207.41,307h10.5a0,0,0,0,1,0,0v1.68a5.25,5.25,0,0,1-5.25,5.25h0a5.25,5.25,0,0,1-5.25-5.25V307A0,0,0,0,1,207.41,307Z" style="fill: #e8b49a" />
+                                </g>
+                            </g>
+                            <g class="sourcils">
+                                <rect x="204.71" y="307.47" width="17.07" height="4.3" rx="2.15" ry="2.15" style="fill: #dd9581" />
+                                <rect x="169.28" y="307.47" width="17.07" height="4.3" rx="2.15" ry="2.15" style="fill: #dd9581" />
+                                <rect x="169.28" y="306.4" width="17.07" height="4.3" rx="2.15" ry="2.15" style="fill: #052439" />
+                                <rect x="204.71" y="306.4" width="17.07" height="4.3" rx="2.15" ry="2.15" style="fill: #052439" />
+                                <g>
+                                    <rect x="170.29" y="306.69" width="10.7" height="1.87" rx="0.93" ry="0.93" style="fill: #2d4f5d" />
+                                    <rect x="205.49" y="306.69" width="10.7" height="1.87" rx="0.93" ry="0.93" style="fill: #2d4f5d" />
+                                </g>
+                            </g>
+                            <path d="M184.4,355.4a16.54,16.54,0,0,0,23.38.75" transform="translate(0.03 0.16)" style="fill: none;stroke: #e9907b;stroke-linecap: round;stroke-miterlimit: 10;stroke-width: 2px" />
+                        </g>
+                        <path id="bodyCharacter" d="M165.17,381H225.9a12.42,12.42,0,0,1,12.42,12.42V503.28a0,0,0,0,1,0,0H152.74a0,0,0,0,1,0,0V393.4A12.42,12.42,0,0,1,165.17,381Z" style="fill: #d32f2f" />
+                        <g id="leftArm">
+                            <circle cx="181.15" cy="456.66" r="10.47" style="fill: #f7ccab" />
+                            <circle cx="174.15" cy="456.15" r="9.41" style="fill: #d1a686" />
+                            <rect x="127.9" y="383.45" width="23.47" height="83.58" rx="10.21" ry="10.21" transform="translate(189.1 -19.44) rotate(24.52)" style="fill: #e85656" />
+                            <path d="M162.34,391l-33.61,73.69a10.21,10.21,0,0,0,8.48-5.93l26.22-57.46A10.26,10.26,0,0,0,162.34,391Z" transform="translate(0.03 0.16)" style="fill: #d32f2f" />
+                            <rect x="135.85" y="421.88" width="23.42" height="66.04" rx="11.71" ry="11.71" transform="matrix(0.04, -1, 1, 0.04, -312.2, 586.57)" style="fill: #e85656" />
+                            <path d="M127.11,460.55a11.74,11.74,0,0,1-11.29-11.65,11.69,11.69,0,0,0,10,17l42.59,1.49a11.72,11.72,0,0,0,10-5Z" transform="translate(0.03 0.16)" style="fill: #d32f2f" />
+                        </g>
+                        <g id="rightArm">
+                            <rect x="243.45" y="378.92" width="23.6" height="92.74" rx="11.8" ry="11.8" transform="translate(-214.57 266.49) rotate(-40.34)" style="fill: #e85656" />
+                            <rect x="285.17" y="434.13" width="20.35" height="49.47" rx="8.9" ry="8.9" transform="translate(-229.54 608.22) rotate(-73.1)" style="fill: #e85656" />
+                        </g>
+                        <path d="M238.55,394.61l44.75,52.7a11.39,11.39,0,0,1,1.36,2L313.39,458a9.24,9.24,0,0,1,6.16,6.21,8.92,8.92,0,0,0-6.08-10.51L288,446a11.89,11.89,0,0,0-1.36-2L241.89,391.3A11.84,11.84,0,0,0,225.26,390h0a11.67,11.67,0,0,0-2.15,2.42A11.85,11.85,0,0,1,238.55,394.61Z" transform="translate(0.03 0.16)" style="fill: #d32f2f" />
+                        <g id="hand">
+                            <rect x="306.05" y="458.35" width="16.53" height="12.44" rx="5.47" ry="5.47" transform="translate(148.66 -71.15) rotate(16.9)" style="fill: #d1a686" />
+                            <path d="M324.4,455.88a15.9,15.9,0,0,0-15.91,15.9H340.3A15.9,15.9,0,0,0,324.4,455.88Z" transform="translate(0.03 0.16)" style="fill: #ecf0f1" />
+                            <rect x="306.13" y="464.12" width="8.54" height="4.63" rx="2.31" ry="2.31" transform="translate(829.67 256.11) rotate(101.58)" style="fill: #f7ccab" />
+                            <rect x="313.59" y="457.29" width="22.42" height="11.12" rx="5.56" ry="5.56" style="fill: #e0e0e0" />
+                            <rect x="310.76" y="456.04" width="24.71" height="10.56" rx="4.77" ry="4.77" style="fill: #f7ccab" />
+                        </g>
+                        <g id="legs">
+                            <path d="M152.74,497.49h85.58a0,0,0,0,1,0,0V514.6a11.51,11.51,0,0,1-11.51,11.51H164.26a11.51,11.51,0,0,1-11.51-11.51V497.49A0,0,0,0,1,152.74,497.49Z" style="fill: #2a5e91" />
+                            <path d="M171.08,639.34h-14.2c-7.81,0-14.21-4.55-14.21-10.1l-.06-116c0-5.56,6.39-10.11,14.2-10.11h0c7.82,0,14.21,4.55,14.21,10.11Z" transform="translate(0.03 0.16)" style="fill: #2a5e91" />
+                            <path d="M220.6,639.38h14.2c7.81,0,14.21-4.55,14.21-10.11l.06-116c0-5.55-6.39-10.1-14.2-10.1h0c-7.82,0-14.21,4.55-14.21,10.1Z" transform="translate(0.03 0.16)" style="fill: #2a5e91" />
+                            <path d="M171.08,639.34h-14.2c-7.81,0-14.21-4.24-14.21-9.41l-.06-108.09c0-5.18,6.39-9.42,14.2-9.42h0c7.82,0,14.21,4.24,14.21,9.42Z" transform="translate(0.03 0.16)" style="fill: #346ca3" />
+                            <ellipse cx="150.67" cy="642.54" rx="21.64" ry="5.17" style="fill: #3d3d3d;opacity: 0.7000000000000001" />
+                            <path d="M168.07,519.84l.06,119.4h3L171,521.8c0-2.92-2-5.54-5.2-7.27A7.83,7.83,0,0,1,168.07,519.84Z" transform="translate(0.03 0.16)" style="fill: #2a5e91" />
+                            <g id="piedDroit">
+                                <path d="M150.64,620.67a20.57,20.57,0,0,0-20.56,20.57h41.13A20.57,20.57,0,0,0,150.64,620.67Z" transform="translate(0.03 0.16)" style="fill: #4d5144" />
+                                <path d="M150.64,620.67c-.65,0-1.29,0-1.93.1a20.57,20.57,0,0,1,18.64,20.47h3.86A20.57,20.57,0,0,0,150.64,620.67Z" transform="translate(0.03 0.16)" style="fill: #3b3d35" />
+                                <rect x="128.42" y="640.2" width="44.52" height="4.66" rx="2.33" ry="2.33" style="fill: #fff" />
+                            </g>
+                            <path d="M220.6,639.34h14.2c7.81,0,14.21-4.24,14.21-9.41l.06-108.09c0-5.18-6.39-9.42-14.2-9.42h0c-7.82,0-14.21,4.24-14.21,9.42Z" transform="translate(0.03 0.16)" style="fill: #346ca3" />
+                            <path d="M246.06,519.84l.06,119.5h2.95L249,521.8c0-2.92-2-5.54-5.21-7.27A7.79,7.79,0,0,1,246.06,519.84Z" transform="translate(0.03 0.16)" style="fill: #2a5e91" />
+                            <g id="piedGauche">
+                                <path d="M241.06,619.61a20.46,20.46,0,0,0-20.46,20.46h40.92A20.46,20.46,0,0,0,241.06,619.61Z" transform="translate(0.03 0.16)" style="fill: #4d5144" />
+                                <path d="M241,619.61c-.65,0-1.3,0-1.93.1a20.56,20.56,0,0,1,18.63,20.47h3.87A20.57,20.57,0,0,0,241,619.61Z" transform="translate(0.03 0.16)" style="fill: #3b3d35" />
+                                <rect x="218.94" y="637.99" width="44.29" height="4.64" rx="2.32" ry="2.32" style="fill: #fff" />
+                            </g>
+                        </g>
+                        <rect x="145.49" y="517.19" width="8.04" height="41.28" rx="4.02" ry="4.02" style="fill: #498bc1" />
+                    </g>
+                </g>
+                <g id="desk">
+                    <g id="Bureau">
+                        <g id="mug">
+                            <path d="M24.88,431.9H55a0,0,0,0,1,0,0v34.33a6,6,0,0,1-6,6H30.88a6,6,0,0,1-6-6V431.9A0,0,0,0,1,24.88,431.9Z" style="fill: #d32f2f" />
+                            <circle cx="54.96" cy="452.41" r="10.94" style="fill: none;stroke: #d32f2f;stroke-miterlimit: 10;stroke-width: 5px" />
+                            <path d="M24.88,431.9H47.21a0,0,0,0,1,0,0v28.43A4.68,4.68,0,0,1,42.53,465H24.88a0,0,0,0,1,0,0V431.9A0,0,0,0,1,24.88,431.9Z" style="fill: #e85656" />
+                            <rect class="vapeur" x="30.57" y="413.25" width="3.2" height="16.28" rx="1.6" ry="1.6" style="fill: #ecf0f1" />
+                            <rect class="vapeur" data-name="vapeur" x="37.82" y="413.25" width="3.2" height="16.28" rx="1.6" ry="1.6" style="fill: #ecf0f1" />
+                            <rect class="vapeur" data-name="vapeur" x="44.97" y="413.25" width="3.2" height="16.28" rx="1.6" ry="1.6" style="fill: #ecf0f1" />
+                            <rect x="26.38" y="433.66" width="4.19" height="27.66" rx="2.09" ry="2.09" style="fill: #ff6161" />
+                        </g>
+                        <g id="computer">
+                            <rect id="keybord" x="101.15" y="466.46" width="178.12" height="5.58" style="fill: #ecf0f1" />
+                            <g id="screenComputer">
+                                <path d="M213.22,444.68H102.42a6,6,0,0,1-6-6V339.55a6,6,0,0,1,6-6H279.24" transform="translate(0.03 0.16)" style="fill: #bdc3c7" />
+                                <path d="M279.24,333.55h9.35a6,6,0,0,1,6,6v99.13a6,6,0,0,1-6,6H213.22" transform="translate(0.03 0.16)" style="fill: #b0b4b5" />
+                                <path d="M185.14,423.16h20.8a3.2,3.2,0,0,1,3.2,3.2v36.36a0,0,0,0,1,0,0h-27.2a0,0,0,0,1,0,0V426.36A3.2,3.2,0,0,1,185.14,423.16Z" style="fill: #fff" />
+                                <rect x="167.56" y="462.72" width="55.95" height="9.33" rx="2" ry="2" style="fill: #bdc3c7" />
+                                <circle cx="195.58" cy="433.66" r="5.5" style="fill: #b0b4b5" />
+                                <g id="logoComputer">
+                                    <g>
+                                        <path d="M195.07,407.31a18.78,18.78,0,1,1,19.06-18.78,1.5,1.5,0,0,1-3,0,16.07,16.07,0,1,0-16.06,15.78,16.11,16.11,0,0,0,7.38-1.76,1.5,1.5,0,1,1,1.36,2.67A19.3,19.3,0,0,1,195.07,407.31Z" transform="translate(0.03 0.16)" style="fill: #fff" />
+                                        <polygon points="196.83 396.63 209.65 411.16 211.39 409.63 208.15 400.09 198.57 395.1 196.83 396.63" style="fill: #fff" />
+                                        <path d="M208.76,401.82l5.6-4.65s1.73-4-2.88-3.45l-5.61,5" transform="translate(0.03 0.16)" style="fill: #fff" />
+                                        <polygon points="204.6 405.39 203.45 403.09 201.72 404.82 202.87 405.97 204.6 405.39" style="fill: #fff" />
+                                    </g>
+                                </g>
+                                <g id="logoComputer2">
+                                    <image width="51" height="55" transform="translate(170.03 363.16)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADMAAAA3CAYAAAChMHI8AAAACXBIWXMAAAsSAAALEgHS3X78AAAIZ0lEQVRoQ82a6VIbWQyFv7aNcbNjyDapmfd/q6kklY2EzYBtCOD5IR2kvm5jQ0LVqOpWm/ZddK52mWo2m/ECVC35/kUO7S2bsCJl5qv0dwlqlp4Z0B8B97tgMtOd9NTnNjAz4N6HPlc0gT6LngumSkPMd7H9NLoEKAjG74DbNPRO34ueDOqpYEoQXWDNx3ox+tj+GcwtcANcp3ED/PLv7nw8C9SqYLI6dQkQ60ANbACbPrb874HP6fjae4zpKTAGrnyMgYm/z+CkirAioFXAtEliHWN4C9gBdtPYxkDV2P4ZzC3G+Bi4AEb+zOOKACZpwQqAloERENmDQGwDe8A+cAAM/e8dDGCNqVmXpprdYTc/xZgWoHPgFDjx5zlw6fNuCNV7FNBjYASkh0mjxhgVgFc+hv5u2+esEyCyUXeKdwIlKZ0AP4EfPo4xoFeElB4FtAhMBtLH1GYXA/HGx2vgEJNGVikx+oswbIhLkWPo+8hSHvo5ku4RcQlTlgBqA5NVaw0Dso8B+MvHW+zgLd/jHjtsitmExhQDhO81wJiU06j9nZjf8rHJvAOZpQEtgBZJpuPf1dhNvQH+Af4G3mNAap87wdThDNP1C0zfx7SDkePY9r33/Vn7uz5N1w7h2SSVVqdQgslSWccOPcCk8TcG6DXG1B0G4gemDkeY3pceSQdrzwF289sYkFe+5wEGauCfJZFb7EKkugqw2veB2sBIvTZoqtd77OBN7IAR8BX47OMIk46AyF6yA5DdCNCur5Ghv/Uza39mRzGh6a7nYlAGU0plmzB42Ujtm50BX4CPwCcM1AnhTvOBOizHqh4RVy4xIBPCDR/6WXuEG9e8ayKoNqRTgukQUtnDJPEGA7VBqNZXDMgHDNRPjLHscdq8Ts7lclqTgyT+/SvsUocYiHMfknyW+gwCTJutDH3DQ/8bjOFvBJDPGJARTYm0pfc5xlREwpmfEG57nabKHWLSP8OkJPCtaiadHmCxY0gYZd8XH2OS+ERIZISpSI4BbXGgfCfQObDqMmvMpnLatI9py5a/72Hq9nBeloxUrMbAaPGGz7nEmP+KSUcRekLo8NL8yUnz8poxcZmbRGqUg6tyvxrTkg7JbnIRpYivILbtzzWM2QsMwE8sf8rG/hQgmXSrd5jkrzA1Ulpzil1WRTOo5oAq3h98uT4rmVSEXveJ1xgYBcbSCJ8DRCQ1UxIqY1fCOfY5fYwnZQ5rNBPZBzBCJ0B9n5xTFWW5fxJIJpUIktDIx9jfd4kMYkAzK5+TTAakAgxCBVRE5cC1yNifStkR3BLZtNKiG5+XK1pJ5gFDBgNN+4HQZ6UTN/x5IJmyugnMBSEdhY8e8z2GpcUZxAG5Pn8JINkZ/MK0QMXbyOfkXK+kahUwEAe9BIiSsqpdYI5gCwMoe2qz2dmqYCrmVfCptGhdvpzSVV9iYAZEPDvFACmPe1i/CpjsELKergpq0UWI8Yp5abcBUgkgD7cUTKlKMjiVuyqYskt8TO3aPKScjmxRSanmlxcnYHI+C0NCBpPdo4wdIl9SsFJe1PU5iwAJiC6jrB5l6LnuqWg2T9TG2vH1qm3kmlu9Wennc5dRdbqqQ9XnMsJFTkESEXN5bYfwWIpdupiBzx0SjZM97CKUDShL6BFgGt4sR2A16q6JLFVdlF3fqASTAWWp9Iny+wC7ZWW8iiMy6A7NBso7f+74d2e+7hzLE3uEdGY9mszIJeZDdrHb3cGYOWS+npBUS0ACIwbfYTVS7fMvMcZGvl+FAT/0uW+JwvAXxvgJoeoNp5LV7J4Q/QjzIGeENLYwRi6JEleGC+2GWaqaOj37GFAlsCruBEZNxgP/u8LOVYolfvUZaDqAtmB1gumueseHhNGWFaWaGBlgKbUOdquqSyoi75NkVE/tYhKpiLL6imi2y7s9qHjpAOQC5duPsdvZI24WmhLI7retNpcdjmkyrV8NKsLlQnRv1ny9NOUH8N2f5zSrW6CZAZSqdo4VSeolq2DbT2tyDFljvqlR+VO3KvuYYOcppS+zd3wPacgXrOfwkegEXVFUuG1xRjd54Yu+Y2LfxIy5xgCCHZwLulyByqak5zkTVssIonmR7UGdmwvs/A/Av1jv4Ttmy3Nq3ZYB3BMHnxLqUPv8Q+zwPV+T48gx0T1RLjUjVCcHTEV/XYi8k1T9GpPkEdFo/EZI5Zoig1+UztxhyKWrZeQeYoB2iApQTUN1KNVrvvM5G0ScGRCSUDojG8zqPsYAnRBtJgHJ5QjQnmgKjDY7IXRayd+E6HDWBLND5hvnObKrhaX2lVRKXZYuzXTqligMr2n2m+fys0VgIBiXQWbnoH7AkGgHKW/bJqpSZbYQ6pi92NT3nRDJbJfwbGWmPktjjhaVABK14k62pQkRuQ8wQPlXsx7xu04+uEN4Pnmqi/Sd8r8Ngi8lqHLVOX2Zo8fqmQwo63F2s8fE7yvqs6kT2Wf+YO0n1ZHK5JzswPe6x/iTKpe9sjl6DAwEiOwYcv52hh1cjkU/nedENjfLu5g9vfb3r7ELmRGuP5ceCtRLbaakbEPZOUhCZ0TTMLvxNjBaN6WZ3/Uw6V4S2cAOkTpBAGiVCqwGBpqA5EpzmiLjXU9DxlxWlmXbSnFoRIC7JQKzOqj6rtX4YXUw0NxEoDJzEyL4SR2yfktls9vNQVNBUI7m1Pe4JH7IUnxp9WhPASMqQSlqq3qU12pTCTHRiNxECS41nhLF15ToO5eJbIOeA0Y0S08BgiaINjDlU8lodjICIDeunC5Xt3P0O2Ay5c3F4GPUNl9MKljLeWTHccsfVrNVaKGRLiCpnj7LXcv9ys5K9WxQ9UL/o/lcqoohmhWjlV5KMs8lMdumpktv/f8GRrSU8Tb6Dzq+2tjQ8T9jAAAAAElFTkSuQmCC" style="opacity: 0.75;mix-blend-mode: screen" />
+                                    <g>
+                                        <path d="M195.07,407.31a18.78,18.78,0,1,1,19.06-18.78,1.5,1.5,0,0,1-3,0,16.07,16.07,0,1,0-16.06,15.78,16.11,16.11,0,0,0,7.38-1.76,1.5,1.5,0,1,1,1.36,2.67A19.3,19.3,0,0,1,195.07,407.31Z" transform="translate(0.03 0.16)" style="fill: #fff" />
+                                        <polygon points="196.83 396.63 209.65 411.16 211.39 409.63 208.15 400.09 198.57 395.1 196.83 396.63" style="fill: #fff" />
+                                        <path d="M208.76,401.82l5.6-4.65s1.73-4-2.88-3.45l-5.61,5" transform="translate(0.03 0.16)" style="fill: #fff" />
+                                        <polygon points="204.6 405.39 203.45 403.09 201.72 404.82 202.87 405.97 204.6 405.39" style="fill: #fff" />
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                        <g id="desk-2" data-name="desk">
+                            <path id="tableOffice" d="M0,472H348.52a6,6,0,0,1,6,6v5.39a7,7,0,0,1-7,7H0a0,0,0,0,1,0,0V472A0,0,0,0,1,0,472Z" style="fill: #f3c387" />
+                            <rect id="officeFoot" x="308.09" y="490.43" width="15.97" height="158.8" style="fill: #72759a" />
+                            <rect id="officeFoot-2" data-name="officeFoot" x="0.05" y="490.43" width="15.97" height="158.8" style="fill: #72759a" />
+                            <rect id="shadowDesk" x="0.05" y="490.43" width="15.97" height="8.77" style="fill: #595c75" />
+                            <rect id="shadowDesk-2" data-name="shadowDesk" x="308.09" y="490.43" width="15.97" height="8.77" style="fill: #595c75" />
+                        </g>
+                    </g>
+                    <rect x="5.87" y="476.84" width="95.28" height="8.8" rx="4.4" ry="4.4" style="fill: #ffdab6" />
+                </g>
+            </g>
+        </svg>
+
+    </form>
+</body>
+</html>
+
+
+========================================================================================================================================
+
+<Login Page CSS>
+
+body {
+    padding: 0;
+    margin: 0
+}
+
+.login {
+    width: 32vw;
+    left: 0;
+    height: 100vh;
+    background-color: #344A85;
+    position: absolute;
+    z-index: 2;
+    color: white;
+    font-family: Arial, sans-serif
+}
+
+.form {
+    position: relative;
+    margin-left: 5vw;
+    top: 50%;
+    transform: translateY(-50%)
+}
+
+h1 {
+    font-size: 35px;
+    margin-bottom: 35px;
+}
+
+img {
+    width: 20vw;
+    margin-bottom: 40px;
+}
+
+input {
+    margin-top: 0px;
+    margin-bottom: 35px;
+    width: 20vw;
+    height: 35px;
+    border: 0px solid #000000;
+    border-radius: 3px;
+    padding: 4px;
+}
+
+button {
+    color: white;
+    background-color: #009EE3;
+    border: 0px solid #009EE3;
+    font-size: 20px;
+    border-radius: 3px;
+    margin-top: 5px;
+    margin-bottom: 35px;
+    width: 20vw;
+    height: 35px;
+}
+
+svg {
+    height: 100vh;
+    left: 32vw;
+    position: absolute
+}
+
+/*************CHARACTER*************/
+#visage {
+    will-change: transform;
+    transform: translate3d(0, 0, 0);
+    transform-origin: 50% 100%;
+    transform: rotate(0deg);
+    animation: moveHead 5s 0s cubic-bezier(0.230, 1.000, 0.320, 1.000);
+}
+/********************************
+ ************* EYES *************
+ ********************************/
+#paupiere {
+    will-change: transform;
+    transform: translate3d(0, 0, 0);
+    animation: removeEyes 18s 3s linear infinite;
+}
+
+.eyesMove, .sourcils, #nez {
+    will-change: transform;
+    transform: translate3d(0, 0, 0);
+    animation: moveEyes 7s 0s linear infinite;
+}
+
+#eyesMoveBlack {
+    will-change: transform;
+    transform: translate3d(0, 0, 0);
+    animation: moveEyesBlack 7s 0s linear infinite;
+}
+
+/********************************
+ ************* HAND *************
+ ********************************/
+#hand {
+    will-change: transform;
+    transform: translate3d(0, 0, 0);
+    animation: moveHand 10s cubic-bezier(0.860, 0.000, 0.070, 1.000) infinite;
+}
+
+#handClick {
+    will-change: transform;
+    transform: translateY(-2px);
+    transform: translate3d(0, 0, 0);
+    animation: handClick 10s cubic-bezier(0.230, 1.000, 0.320, 1.000) infinite;
+}
+/********************************
+ ************* FOOT *************
+ ********************************/
+#piedDroit {
+    will-change: transform;
+    transform: translate3d(0, 0, 0);
+    -webkit-animation: footMove 10s 0s ease-in-out infinite; /* Safari 4+ */
+    -moz-animation: footMove 10s 0s ease-in-out infinite; /* Fx 5+ */
+    -o-animation: footMove 10s 0s ease-in-out infinite; /* Opera 12+ */
+    animation: footMove 10s 0s ease-in-out infinite;
+}
+
+#shadowFoot {
+    will-change: transform;
+    opacity: 0;
+    transform: translate3d(0, 0, 0);
+    animation: shadowFoot 10s 0s ease-in-out infinite;
+}
+/********************************
+ ************* HEAR *************
+ ********************************/
+.hear #outHearRight {
+    will-change: transform;
+    transform: translate3d(0, 0, 0);
+    animation: moveHearOutRight 7s 0s linear infinite;
+}
+
+.hear #outHearLeft, .hear #lightHear {
+    will-change: transform;
+    transform: translate3d(0, 0, 0);
+    animation: moveHearOutLeft 7s 0s linear infinite;
+    transform: translateX(1px)
+}
+
+.hear #inHearRight {
+    transform: translate3d(0, 0, 0);
+    will-change: transform;
+    animation: moveHearInRight 7s 0s linear infinite;
+}
+
+.hear #inHearLeft {
+    will-change: transform;
+    transform: translate3d(0, 0, 0);
+    animation: moveHearInLeft 7s 0s linear infinite;
+    transform: translateX(1px)
+}
+/********************************
+ ************* HAIR *************
+ ********************************/
+#backHair {
+    will-change: transform;
+    transform: translate3d(0, 0, 0);
+    animation: moveBackHair 7s 0s linear infinite;
+}
+
+.frontHair {
+    will-change: transform;
+    transform: translate3d(0, 0, 0);
+    animation: moveFrontHair 7s 0s linear infinite;
+}
+
+.tienCache {
+    will-change: transform;
+    transform: translate3d(0px, 0, 0);
+    animation: movetienCache 7s 0s linear infinite;
+}
+
+.pateLeft {
+    will-change: transform;
+    transform: translate3d(0, 0, 0);
+    animation: movePateLeft 7s 0s linear infinite;
+}
+
+.pateRight {
+    will-change: width;
+    transform: translate3d(0, 0, 0);
+    -webkit-animation: movePateRight 7s 0s linear infinite; /* Safari 4+ */
+    -moz-animation: none !important; /* Fx 5+ */
+    -o-animation: movePateRight 7s 0s linear infinite; /* Opera 12+ */
+    animation: movePateRight 7s 0s linear infinite;
+}
+
+#shadowHead {
+    will-change: transform;
+    transform: translate3d(0, 0, 0);
+    -webkit-animation: moveshadowHead 7s 0s linear infinite; /* Safari 4+ */
+    -moz-animation: none !important; /* Fx 5+ */
+    -o-animation: moveshadowHead 7s 0s linear infinite; /* Opera 12+ */
+    animation: moveshadowHead 7s 0s linear infinite;
+}
+/********************************
+ ************* REST *************
+ ********************************/
+#logoComputer-2 {
+    will-change: transform;
+    transform: translate3d(0, 0, 0);
+    animation: lightComputer 2s linear infinite alternate;
+}
+
+.vapeur {
+    will-change: transform;
+    transform: translate3d(0, 0, 0);
+    animation: vapeur 2.5s ease-in infinite;
+}
+
+    .vapeur:nth-child(5) {
+        will-change: transform;
+        transform: translate3d(0, 0, 0);
+        animation-delay: 1s;
+    }
+
+    .vapeur:nth-child(6) {
+        will-change: transform;
+        transform: translate3d(0, 0, 0);
+        animation-delay: 2s;
+    }
+
+#plane {
+    will-change: transform;
+    transform: translate3d(0, 0, 0);
+    animation: planeMove 8s cubic-bezier(0.480, 0.310, 0.615, 0.455);
+}
+
+/************* KEYFRAMES *************/
+
+/********************************
+ ************* FOOT *************
+ ********************************/
+@keyframes footMove {
+    40% {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -ms-transform-origin: 100% 100%;
+        -webkit-transform-origin: 100% 100%;
+        transform-origin: 100% 100%;
+        transform-box: fill-box;
+    }
+
+    41% {
+        transform: rotate(10deg);
+        -webkit-transform: rotate(10deg);
+        -ms-transform: rotate(10deg);
+        -ms-transform-origin: 100% 100%;
+        -webkit-transform-origin: 100% 100%;
+        transform-origin: 100% 100%;
+        transform-box: fill-box;
+    }
+
+    42% {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -ms-transform-origin: 100% 100%;
+        -webkit-transform-origin: 100% 100%;
+        transform-origin: 100% 100%;
+        transform-box: fill-box;
+    }
+
+    43% {
+        transform: rotate(10deg);
+        -webkit-transform: rotate(10deg);
+        -ms-transform: rotate(10deg);
+        -ms-transform-origin: 100% 100%;
+        -webkit-transform-origin: 100% 100%;
+        transform-origin: 100% 100%;
+        transform-box: fill-box;
+    }
+
+    44% {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -ms-transform-origin: 100% 100%;
+        -webkit-transform-origin: 100% 100%;
+        transform-origin: 100% 100%;
+        transform-box: fill-box;
+    }
+
+    45% {
+        transform: rotate(10deg);
+        -webkit-transform: rotate(10deg);
+        -ms-transform: rotate(10deg);
+        -ms-transform-origin: 100% 100%;
+        -webkit-transform-origin: 100% 100%;
+        transform-origin: 100% 100%;
+        transform-box: fill-box;
+    }
+
+    46% {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -ms-transform-origin: 100% 100%;
+        -webkit-transform-origin: 100% 100%;
+        transform-origin: 100% 100%;
+        transform-box: fill-box;
+    }
+
+    47% {
+        transform: rotate(10deg);
+        -webkit-transform: rotate(10deg);
+        -ms-transform: rotate(10deg);
+        -ms-transform-origin: 100% 100%;
+        -webkit-transform-origin: 100% 100%;
+        transform-origin: 100% 100%;
+        transform-box: fill-box;
+    }
+
+    48% {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -ms-transform-origin: 100% 100%;
+        -webkit-transform-origin: 100% 100%;
+        transform-origin: 100% 100%;
+        transform-box: fill-box;
+    }
+
+    49% {
+        transform: rotate(10deg);
+        -webkit-transform: rotate(10deg);
+        -ms-transform: rotate(10deg);
+        -ms-transform-origin: 100% 100%;
+        -webkit-transform-origin: 100% 100%;
+        transform-origin: 100% 100%;
+        transform-box: fill-box;
+    }
+
+    50% {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -ms-transform-origin: 100% 100%;
+        -webkit-transform-origin: 100% 100%;
+        transform-origin: 100% 100%;
+        transform-box: fill-box;
+    }
+}
+
+@-moz-keyframes footMove {
+    40% {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -ms-transform-origin: 100% 100%;
+        -webkit-transform-origin: 100% 100%;
+        transform-origin: 100% 100%;
+        transform-box: fill-box;
+    }
+
+    41% {
+        transform: rotate(10deg);
+        -webkit-transform: rotate(10deg);
+        -ms-transform: rotate(10deg);
+        -ms-transform-origin: 100% 100%;
+        -webkit-transform-origin: 100% 100%;
+        transform-origin: 100% 100%;
+        transform-box: fill-box;
+    }
+
+    42% {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -ms-transform-origin: 100% 100%;
+        -webkit-transform-origin: 100% 100%;
+        transform-origin: 100% 100%;
+        transform-box: fill-box;
+    }
+
+    43% {
+        transform: rotate(10deg);
+        -webkit-transform: rotate(10deg);
+        -ms-transform: rotate(10deg);
+        -ms-transform-origin: 100% 100%;
+        -webkit-transform-origin: 100% 100%;
+        transform-origin: 100% 100%;
+        transform-box: fill-box;
+    }
+
+    44% {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -ms-transform-origin: 100% 100%;
+        -webkit-transform-origin: 100% 100%;
+        transform-origin: 100% 100%;
+        transform-box: fill-box;
+    }
+
+    45% {
+        transform: rotate(10deg);
+        -webkit-transform: rotate(10deg);
+        -ms-transform: rotate(10deg);
+        -ms-transform-origin: 100% 100%;
+        -webkit-transform-origin: 100% 100%;
+        transform-origin: 100% 100%;
+        transform-box: fill-box;
+    }
+
+    46% {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -ms-transform-origin: 100% 100%;
+        -webkit-transform-origin: 100% 100%;
+        transform-origin: 100% 100%;
+        transform-box: fill-box;
+    }
+
+    47% {
+        transform: rotate(10deg);
+        -webkit-transform: rotate(10deg);
+        -ms-transform: rotate(10deg);
+        -ms-transform-origin: 100% 100%;
+        -webkit-transform-origin: 100% 100%;
+        transform-origin: 100% 100%;
+        transform-box: fill-box;
+    }
+
+    48% {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -ms-transform-origin: 100% 100%;
+        -webkit-transform-origin: 100% 100%;
+        transform-origin: 100% 100%;
+        transform-box: fill-box;
+    }
+
+    49% {
+        transform: rotate(10deg);
+        -webkit-transform: rotate(10deg);
+        -ms-transform: rotate(10deg);
+        -ms-transform-origin: 100% 100%;
+        -webkit-transform-origin: 100% 100%;
+        transform-origin: 100% 100%;
+        transform-box: fill-box;
+    }
+
+    50% {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -ms-transform-origin: 100% 100%;
+        -webkit-transform-origin: 100% 100%;
+        transform-origin: 100% 100%;
+        transform-box: fill-box;
+    }
+}
+
+@-webkit-keyframes footMove {
+    40% {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -ms-transform-origin: 100% 100%;
+        -webkit-transform-origin: 100% 100%;
+        transform-origin: 100% 100%;
+        transform-box: fill-box;
+    }
+
+    41% {
+        transform: rotate(10deg);
+        -webkit-transform: rotate(10deg);
+        -ms-transform: rotate(10deg);
+        -ms-transform-origin: 100% 100%;
+        -webkit-transform-origin: 100% 100%;
+        transform-origin: 100% 100%;
+        transform-box: fill-box;
+    }
+
+    42% {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -ms-transform-origin: 100% 100%;
+        -webkit-transform-origin: 100% 100%;
+        transform-origin: 100% 100%;
+        transform-box: fill-box;
+    }
+
+    43% {
+        transform: rotate(10deg);
+        -webkit-transform: rotate(10deg);
+        -ms-transform: rotate(10deg);
+        -ms-transform-origin: 100% 100%;
+        -webkit-transform-origin: 100% 100%;
+        transform-origin: 100% 100%;
+        transform-box: fill-box;
+    }
+
+    44% {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -ms-transform-origin: 100% 100%;
+        -webkit-transform-origin: 100% 100%;
+        transform-origin: 100% 100%;
+        transform-box: fill-box;
+    }
+
+    45% {
+        transform: rotate(10deg);
+        -webkit-transform: rotate(10deg);
+        -ms-transform: rotate(10deg);
+        -ms-transform-origin: 100% 100%;
+        -webkit-transform-origin: 100% 100%;
+        transform-origin: 100% 100%;
+        transform-box: fill-box;
+    }
+
+    46% {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -ms-transform-origin: 100% 100%;
+        -webkit-transform-origin: 100% 100%;
+        transform-origin: 100% 100%;
+        transform-box: fill-box;
+    }
+
+    47% {
+        transform: rotate(10deg);
+        -webkit-transform: rotate(10deg);
+        -ms-transform: rotate(10deg);
+        -ms-transform-origin: 100% 100%;
+        -webkit-transform-origin: 100% 100%;
+        transform-origin: 100% 100%;
+        transform-box: fill-box;
+    }
+
+    48% {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -ms-transform-origin: 100% 100%;
+        -webkit-transform-origin: 100% 100%;
+        transform-origin: 100% 100%;
+        transform-box: fill-box;
+    }
+
+    49% {
+        transform: rotate(10deg);
+        -webkit-transform: rotate(10deg);
+        -ms-transform: rotate(10deg);
+        -ms-transform-origin: 100% 100%;
+        -webkit-transform-origin: 100% 100%;
+        transform-origin: 100% 100%;
+        transform-box: fill-box;
+    }
+
+    50% {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -ms-transform-origin: 100% 100%;
+        -webkit-transform-origin: 100% 100%;
+        transform-origin: 100% 100%;
+        transform-box: fill-box;
+    }
+}
+
+@-o-keyframes footMove {
+    40% {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -ms-transform-origin: 100% 100%;
+        -webkit-transform-origin: 100% 100%;
+        transform-origin: 100% 100%;
+        transform-box: fill-box;
+    }
+
+    41% {
+        transform: rotate(10deg);
+        -webkit-transform: rotate(10deg);
+        -ms-transform: rotate(10deg);
+        -ms-transform-origin: 100% 100%;
+        -webkit-transform-origin: 100% 100%;
+        transform-origin: 100% 100%;
+        transform-box: fill-box;
+    }
+
+    42% {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -ms-transform-origin: 100% 100%;
+        -webkit-transform-origin: 100% 100%;
+        transform-origin: 100% 100%;
+        transform-box: fill-box;
+    }
+
+    43% {
+        transform: rotate(10deg);
+        -webkit-transform: rotate(10deg);
+        -ms-transform: rotate(10deg);
+        -ms-transform-origin: 100% 100%;
+        -webkit-transform-origin: 100% 100%;
+        transform-origin: 100% 100%;
+        transform-box: fill-box;
+    }
+
+    44% {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -ms-transform-origin: 100% 100%;
+        -webkit-transform-origin: 100% 100%;
+        transform-origin: 100% 100%;
+        transform-box: fill-box;
+    }
+
+    45% {
+        transform: rotate(10deg);
+        -webkit-transform: rotate(10deg);
+        -ms-transform: rotate(10deg);
+        -ms-transform-origin: 100% 100%;
+        -webkit-transform-origin: 100% 100%;
+        transform-origin: 100% 100%;
+        transform-box: fill-box;
+    }
+
+    46% {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -ms-transform-origin: 100% 100%;
+        -webkit-transform-origin: 100% 100%;
+        transform-origin: 100% 100%;
+        transform-box: fill-box;
+    }
+
+    47% {
+        transform: rotate(10deg);
+        -webkit-transform: rotate(10deg);
+        -ms-transform: rotate(10deg);
+        -ms-transform-origin: 100% 100%;
+        -webkit-transform-origin: 100% 100%;
+        transform-origin: 100% 100%;
+        transform-box: fill-box;
+    }
+
+    48% {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -ms-transform-origin: 100% 100%;
+        -webkit-transform-origin: 100% 100%;
+        transform-origin: 100% 100%;
+        transform-box: fill-box;
+    }
+
+    49% {
+        transform: rotate(10deg);
+        -webkit-transform: rotate(10deg);
+        -ms-transform: rotate(10deg);
+        -ms-transform-origin: 100% 100%;
+        -webkit-transform-origin: 100% 100%;
+        transform-origin: 100% 100%;
+        transform-box: fill-box;
+    }
+
+    50% {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -ms-transform-origin: 100% 100%;
+        -webkit-transform-origin: 100% 100%;
+        transform-origin: 100% 100%;
+        transform-box: fill-box;
+    }
+}
+
+@keyframes shadowFoot {
+    40% {
+        opacity: 0;
+        transform: scale(0.6);
+        transform-origin: center;
+    }
+
+    41% {
+        opacity: 0.3;
+        transform: scale(1);
+        transform-origin: center;
+    }
+
+    42% {
+        opacity: 0;
+        transform: scale(0.6);
+        transform-origin: center;
+    }
+
+    43% {
+        opacity: 0.3;
+        transform: scale(1);
+        transform-origin: center;
+    }
+
+    44% {
+        opacity: 0;
+        transform: scale(0.6);
+        transform-origin: center;
+    }
+
+    45% {
+        opacity: 0.3;
+        transform: scale(1);
+        transform-origin: center;
+    }
+
+    46% {
+        opacity: 0;
+        transform: scale(0.6);
+        transform-origin: center;
+    }
+
+    47% {
+        opacity: 0.3;
+        transform: scale(1);
+        transform-origin: center;
+    }
+
+    48% {
+        opacity: 0;
+        transform: scale(0.6);
+        transform-origin: center;
+    }
+
+    49% {
+        opacity: 0.3;
+        transform: scale(1);
+        transform-origin: center;
+    }
+
+    50% {
+        opacity: 0;
+        transform: scale(0.6);
+        transform-origin: center;
+    }
+}
+/********************************
+ ************* EYES *************
+ ********************************/
+@keyframes moveEyes {
+    50% {
+        transform: translateX(0px) translateZ(0px)
+    }
+
+    55% {
+        transform: translate(-3px,3px) translateZ(0px)
+    }
+
+    60% {
+        transform: translate(-3px,3px) translateZ(0px)
+    }
+
+    65% {
+        transform: translate(3px,3px) translateZ(0px)
+    }
+
+    70% {
+        transform: translate(3px,3px) translateZ(0px)
+    }
+
+    75% {
+        transform: translateX(0px) translateZ(0px)
+    }
+}
+
+@keyframes moveEyesBlack {
+    10% {
+        transform: translateX(0px) translateZ(0px)
+    }
+
+    15% {
+        transform: translateX(4px) translateZ(0px)
+    }
+
+    20% {
+        transform: translateX(4px) translateZ(0px)
+    }
+
+    25% {
+        transform: translateX(0px) translateZ(0px)
+    }
+
+    30% {
+        transform: translateX(0px) translateZ(0px)
+    }
+
+    35% {
+        transform: translateX(4px) translateZ(0px)
+    }
+
+    40% {
+        transform: translateX(4px) translateZ(0px)
+    }
+
+    45% {
+        transform: translateX(0px) translateZ(0px)
+    }
+
+    50% {
+        transform: translateX(0px) translateZ(0px)
+    }
+
+    55% {
+        transform: translateX(0px) translateZ(0px)
+    }
+
+    60% {
+        transform: translateX(0px) translateZ(0px)
+    }
+
+    65% {
+        transform: translateX(4px) translateZ(0px)
+    }
+
+    70% {
+        transform: translateX(4px) translateZ(0px)
+    }
+
+    75% {
+        transform: translateX(0px) translateZ(0px)
+    }
+}
+
+@keyframes removeEyes {
+    17% {
+        transform: translateY(0px)
+    }
+
+    17.3% {
+        transform: translateY(7px)
+    }
+
+    17.6% {
+        transform: translateY(0px)
+    }
+
+    70% {
+        transform: translateY(0px)
+    }
+
+    70.3% {
+        transform: translateY(7px)
+    }
+
+    70.6% {
+        transform: translateY(0px)
+    }
+
+    71.3% {
+        transform: translateY(0px)
+    }
+
+    71.6% {
+        transform: translateY(7px)
+    }
+
+    71.9% {
+        transform: translateY(0px)
+    }
+}
+/********************************
+ ************* HAIR *************
+ ********************************/
+@keyframes movePateLeft {
+    50% {
+        width: 3px
+    }
+
+    55% {
+        width: 0px
+    }
+
+    60% {
+        width: 0px
+    }
+
+    65% {
+        width: 5px
+    }
+
+    70% {
+        width: 5px
+    }
+
+    75% {
+        width: 3px
+    }
+}
+
+@keyframes movePateRight {
+    50% {
+        width: 3px;
+        transform: translateX(0px);
+        -webkit-transform: translateX(0px);
+        -ms-transform: translateX(0px);
+    }
+
+    55% {
+        width: 5px;
+        transform: translateX(-2px);
+        -webkit-transform: translateX(-2px);
+        -ms-transform: translateX(-2px);
+    }
+
+    60% {
+        width: 5px;
+        transform: translateX(-2px);
+        -webkit-transform: translateX(-2px);
+        -ms-transform: translateX(-2px);
+    }
+
+    65% {
+        width: 0px;
+        transform: translateX(2px);
+        -webkit-transform: translateX(2px);
+        -ms-transform: translateX(2px);
+    }
+
+    70% {
+        width: 0px;
+        transform: translateX(2px);
+        -webkit-transform: translateX(2px);
+        -ms-transform: translateX(2px);
+    }
+
+    75% {
+        width: 3px;
+        transform: translateX(0px);
+        -webkit-transform: translateX(0px);
+        -ms-transform: translateX(0px);
+    }
+}
+
+@keyframes moveshadowHead {
+    50% {
+        width: 8px;
+        transform: translateX(0px)
+    }
+
+    55% {
+        width: 3px;
+        transform: translateX(5px)
+    }
+
+    60% {
+        width: 3px;
+        transform: translateX(5px)
+    }
+
+    65% {
+        width: 9px;
+        transform: translateX(-1px)
+    }
+
+    70% {
+        width: 9px;
+        transform: translateX(-1px)
+    }
+
+    75% {
+        width: 8px;
+        transform: translateX(0px)
+    }
+}
+
+@keyframes moveBackHair {
+    50% {
+        transform: translateX(0px)
+    }
+
+    55% {
+        transform: translateX(2px)
+    }
+
+    60% {
+        transform: translateX(2px)
+    }
+
+    65% {
+        transform: translateX(-2px)
+    }
+
+    70% {
+        transform: translateX(-2px)
+    }
+
+    75% {
+        transform: translateX(0px)
+    }
+}
+
+@keyframes moveFrontHair {
+    50% {
+        transform: translate(0px)
+    }
+
+    55% {
+        transform: translate(-3px,3px)
+    }
+
+    60% {
+        transform: translate(-3px,3px)
+    }
+
+    65% {
+        transform: translate(3px,3px)
+    }
+
+    70% {
+        transform: translate(3px,3px)
+    }
+
+    75% {
+        transform: translate(0px)
+    }
+}
+
+@keyframes movetienCache {
+    50% {
+        transform: translate(0px)
+    }
+
+    55% {
+        transform: translate(2px,3px)
+    }
+
+    60% {
+        transform: translate(2px,3px)
+    }
+
+    65% {
+        transform: translate(-2px,3px)
+    }
+
+    70% {
+        transform: translate(-2px,3px)
+    }
+
+    75% {
+        transform: translate(0px)
+    }
+}
+/********************************
+ ************* HEAR *************
+ ********************************/
+@keyframes moveHearOutRight {
+    50% {
+        transform: translate(0px)
+    }
+
+    55% {
+        transform: translate(1px,3px)
+    }
+
+    60% {
+        transform: translate(1px,3px)
+    }
+
+    65% {
+        transform: translate(-1px,3px)
+    }
+
+    70% {
+        transform: translate(-1px,3px)
+    }
+
+    75% {
+        transform: translate(0px)
+    }
+}
+
+@keyframes moveHearOutLeft {
+    50% {
+        transform: translate(0px)
+    }
+
+    55% {
+        transform: translate(1px,3px)
+    }
+
+    60% {
+        transform: translate(1px,3px)
+    }
+
+    65% {
+        transform: translate(-1px,3px)
+    }
+
+    70% {
+        transform: translate(-1px,3px)
+    }
+
+    75% {
+        transform: translate(0px)
+    }
+}
+
+@keyframes moveHearInRight {
+    50% {
+        transform: translateX(0px)
+    }
+
+    55% {
+        transform: translateX(1px)
+    }
+
+    60% {
+        transform: translateX(1px)
+    }
+
+    65% {
+        transform: translateX(-3px)
+    }
+
+    70% {
+        transform: translateX(-3px)
+    }
+
+    75% {
+        transform: translateX(0px)
+    }
+}
+
+@keyframes moveHearInLeft {
+    50% {
+        transform: translateX(1px)
+    }
+
+    55% {
+        transform: translateX(4px)
+    }
+
+    60% {
+        transform: translateX(4px)
+    }
+
+    65% {
+        transform: translateX(0px)
+    }
+
+    70% {
+        transform: translateX(0px)
+    }
+
+    75% {
+        transform: translateX(1px)
+    }
+}
+/********************************
+ ************* HAND *************
+ ********************************/
+@keyframes handClick {
+    60% {
+        transform: translateY(-2px)
+    }
+
+    61% {
+        transform: translateY(-1px)
+    }
+
+    62% {
+        transform: translateY(-2px)
+    }
+
+    63% {
+        transform: translateY(-1px)
+    }
+
+    64% {
+        transform: translateY(-2px)
+    }
+}
+
+@keyframes moveHand {
+    52% {
+        transform: translateX(0px)
+    }
+
+    54% {
+        transform: translateX(2px)
+    }
+
+    56% {
+        transform: translateX(-2px)
+    }
+
+    58% {
+        transform: translateX(0px)
+    }
+}
+
+/********************************
+ ************* REST *************
+ ********************************/
+
+@keyframes vapeur {
+    0% {
+        opacity: 1;
+        transform: translateY(0px)
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(-15px)
+    }
+}
+
+#flocons {
+    will-change: transform;
+    transform: translate3d(0px, -50px, 0);
+    animation: flocons 3s linear infinite;
+}
+
+@keyframes flocons {
+    0% {
+        transform: translate(-50px,-50px)
+    }
+
+    100% {
+        transform: translate(85px,85px)
+    }
+}
+
+#flocons2 {
+    will-change: transform;
+    transform: translate3d(0px, -50px, 0);
+    animation: flocons2 10s linear infinite;
+}
+
+@keyframes flocons2 {
+    0% {
+        transform: translate(50px,-50px)
+    }
+
+    100% {
+        transform: translate(-85px,85px)
+    }
+}
+
+@keyframes planeMove {
+    100% {
+        transform: translate(-550px, -120px)
+    }
+}
+
+@keyframes lightComputer {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+}
+
