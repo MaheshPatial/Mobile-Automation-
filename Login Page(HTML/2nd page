@@ -1,0 +1,241 @@
+This Page consist of project selection, God mode , FPS and Interrupt
+
+<Project Selection><HTML>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="ProjectSelection.css" />
+
+    <script type="text/javascript" src="DropDown.js"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <title></title>
+</head>
+
+<script>
+    //back button
+    function goBack() {
+        window.history.back();
+</script>
+
+<body>
+    <ul id="menu">
+        <li>
+            <input id="check01" type="checkbox" name="menu" style="visibility:hidden;"/>
+            <label for="check01">Project selection</label>
+            <ul class="submenu">
+                <li><a href="Trials.html" target="content">Trials</a></li>
+                <li><a href="ACRpage.html" target="content">Assassin Creed Rebalian</a></li>
+                <li><a href="https://www.youtube.com/watch?v=ebpuQQEF_Bc&list=RDebpuQQEF_Bc&start_radio=1" target="content">Horse Haven </a></li>
+                <li><a href="https://www.codechef.com/problems/hard" target="content">Might & Magicn</a></li>
+                <li><a href="https://www.codechef.com/" target="content">South Park</a></li>
+                <li><a href="https://airlab.163.com/demo-report/summarization/3?token=58fc5b01cff541dec7a95aaf9b7adbe7266f5719" target="content">Hungry Shark World</a></li>
+                <li><a href="https://www.youtube.com/watch?v=rJQoWehJN3Y" target="content">Hungry Shark Evolution</a></li>
+                <li><a href="#" target="content">Hungry Dragon</a></li>
+            </ul>
+        </li>
+        <li>
+            <input id="check02" type="checkbox" name="menu" style="visibility:hidden;" />
+            <label for="check02">Platform Select</label>
+            <ul class="submenu">
+                <li><a href="#">Android</a></li> <!--privide link #-->
+                <li><a href="#">iOS</a></li>
+            </ul>
+        </li>
+    </ul>
+    <!--Dropdown end-->
+    <center>
+        <iframe name="content" src="Messagebox.html" style="border: 0px solid gray; height:803px; width: 1271px; margin-top:6%; right: 0%" allowtransparency="true"></iframe>
+    </center>
+</body>
+</html>
+
+<Project Selection><CSS>
+
+body {
+    width: 200wh;
+    height: 90vh;
+    color: #fff;
+    background: linear-gradient(-45deg, #007bff, #ff007b, #0400ff, #ff8400);
+    background-size: 400% 400%;
+    -webkit-animation: Gradient 15s ease infinite;
+    -moz-animation: Gradient 15s ease infinite;
+    animation: Gradient 15s ease infinite;
+    font-family: Helvetica, Arial, sans-serif;
+}
+/*-background start-*/
+@-webkit-keyframes Gradient {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@-moz-keyframes Gradient {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@keyframes Gradient {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+h1,
+h6 {
+    font-family: 'Open Sans';
+    font-weight: 300;
+    text-align: center;
+    position: absolute;
+    top: 45%;
+    right: 0;
+    left: 0;
+}
+
+p{
+    color:white;
+}
+
+h2 {
+    color: #b20000;
+}
+
+.col-md-3{
+    margin-top: 40px;
+}
+/*-background end-*/
+
+
+
+/*--dropdown list start--*/
+article 
+{margin: 10px;}
+
+/*Style for the first level menu bar*/
+ul#menu {
+    position: fixed;
+    top: 17px;
+    width: 100%;
+    height: 3em;
+    margin: 0;
+    padding: 1px 23px;
+    background: #33333308;
+    color: #fff;
+    box-shadow: 0 -1px rgba(0,0,0,0.14) inset;
+}
+
+    ul#menu > li {
+        float: left;
+        list-style-type: none;
+        position: relative;
+    }
+
+label {
+    position: relative;
+    display: block;
+    padding: 1px 59px 0px 22px;
+    line-height: 3em;
+    transition: background 0.3s;
+    cursor: pointer;
+}
+
+    label:after {
+        content: "";
+        position: absolute;
+        display: block;
+        top: 50%;
+        right: 5px;
+        width: 0;
+        height: 0;
+        border-top: 4px solid rgba(255,255,255,.5);
+        border-bottom: 0 solid rgba(255,255,255,.5);
+        border-left: 4px solid transparent;
+        border-right: 4px solid transparent;
+        transition: border-bottom .1s, border-top .1s .1s;
+    }
+
+    label:hover,
+    input:checked ~ label {
+        background: rgba(0,0,0,.3);
+    }
+
+   input:checked ~ label:after 
+   {
+        border-top: 0 solid rgba(255,255,255,.5);
+        border-bottom: 4px solid rgba(255,255,255,.5);
+        transition: border-top .1s, border-bottom .1s .1s;
+   }
+
+/*hide the inputs*/
+input {
+    display:none///
+}
+
+    /*show the second levele menu of the selected voice*/
+    input:checked ~ ul.submenu {
+        max-height: 420px;
+        transition: max-height 0.5s ease-in;
+    }
+
+/*style for the second level menu*/
+ul.submenu {
+    max-height: 0;
+    padding: 0;
+    overflow: hidden;
+    list-style-type: none;
+    background: #444;
+    box-shadow: 0 0 1px rgba(0,0,0,.3);
+    transition: max-height 0.5s ease-out;
+    position: absolute;
+    min-width: 100%;
+}
+
+    ul.submenu li a {
+        display: block;
+        padding: 12px;
+        color: #ddd;
+        text-decoration: none;
+        box-shadow: 0 -1px rgba(0,0,0,.5) inset;
+        transition: background .3s;
+        white-space: nowrap;
+    }
+
+        ul.submenu li a:hover {
+            background: rgba(0,0,0,.3);
+        }
+/*--dropdown list end--*/
+
+/*iframe start*/
+iframe {
+    max-width: 100%;
+}
+/*iframe end*/
